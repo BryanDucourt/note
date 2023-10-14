@@ -1,0 +1,2 @@
+# note
+obsidian sync
