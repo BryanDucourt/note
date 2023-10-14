@@ -143,11 +143,15 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "b1f5a86b0d387889",
   "lastOpenFiles": [
+    "Asset/Pasted image 20231014213858.png",
+    "Asset/Pasted image 20231014213702.png",
     "Template/Daily.md",
     "Summary/Daily/2023-10-14.md",
     "Summary/Monthly",
