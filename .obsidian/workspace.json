@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2c40a580ca9d96ca",
+        "id": "bc9556c28c844435",
         "type": "tabs",
         "children": [
           {
-            "id": "b1f5a86b0d387889",
+            "id": "fe8a87739a83d98f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Summary/Daily/2023-10-14.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Summary/Daily/2023-10-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Summary/Daily/2023-10-14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Summary/Daily/2023-10-14.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,12 +140,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b1f5a86b0d387889",
+  "active": "fe8a87739a83d98f",
   "lastOpenFiles": [
+    "Summary/Daily/2023-10-14.md",
     "Asset/Pasted image 20231014213858.png",
     "Asset/Pasted image 20231014213702.png",
     "Template/Daily.md",
-    "Summary/Daily/2023-10-14.md",
     "Summary/Monthly",
     "Summary/Weekly",
     "Summary/Daily",
