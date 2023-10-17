@@ -1,6 +1,0 @@
----
-tags:
-  - Linux
-  - Schedule
----
-CPP
