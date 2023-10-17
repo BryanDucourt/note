@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Summary/Daily/2023-10-14.md",
+                "file": "Others/Jot Down/Linux Lock.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Summary/Daily/2023-10-14.md",
+                "file": "Others/Jot Down/Linux Lock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Summary/Daily/2023-10-14.md",
+                "file": "Others/Jot Down/Linux Lock.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Summary/Daily/2023-10-14.md"
+                "file": "Others/Jot Down/Linux Lock.md"
               }
             }
           }
@@ -148,11 +148,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "11c5f9e805fba250",
+  "active": "fe8a87739a83d98f",
   "lastOpenFiles": [
-    "Others/未命名",
-    "Meeting",
     "Summary/Daily/2023-10-14.md",
+    "Others/Jot Down/Linux Lock.md",
+    "Others/Jot Down",
+    "Meeting",
     "Asset/Pasted image 20231014213858.png",
     "Asset/Pasted image 20231014213702.png",
     "Template/Daily.md",
