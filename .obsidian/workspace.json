@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Others/Jot Down/231017.md",
+                "file": "Summary/Daily/2023-10-14.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Jot Down/231017.md",
+                "file": "Summary/Daily/2023-10-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Jot Down/231017.md",
+                "file": "Summary/Daily/2023-10-14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Jot Down/231017.md"
+                "file": "Summary/Daily/2023-10-14.md"
               }
             }
           }
@@ -148,11 +148,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "11c5f9e805fba250",
+  "active": "f68fb6cc363497b4",
   "lastOpenFiles": [
+    "Others/Jot Down/231017.md",
     "Others/Linux",
     "Others/未命名.md",
-    "Others/Jot Down/231017.md",
     "Others/Jot Down/Linux Lock.md",
     "Summary/Daily/2023-10-14.md",
     "Others/Jot Down",
@@ -168,7 +168,6 @@
     "Asset",
     "Template",
     "Others",
-    "Summary",
-    "Paper"
+    "Summary"
   ]
 }
