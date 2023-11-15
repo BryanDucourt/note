@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Jot Down/231114.md",
+                "file": "Others/Jot Down/231108.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Jot Down/231114.md",
+                "file": "Others/Jot Down/231108.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Jot Down/231114.md"
+                "file": "Others/Jot Down/231108.md"
               }
             }
           }
@@ -161,10 +160,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dd852ae86bfa8e64",
+  "active": "f68fb6cc363497b4",
   "lastOpenFiles": [
-    "Others/Jot Down/231108.md",
     "Others/Jot Down/231114.md",
+    "Others/Jot Down/231108.md",
     "README.md",
     "Others/Jot Down/231115.md",
     "Others/Jot Down/231021.md",
