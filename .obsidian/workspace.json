@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "dd852ae86bfa8e64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Others/Jot Down/231115.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,7 +148,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dd852ae86bfa8e64",
+  "active": "f68fb6cc363497b4",
   "lastOpenFiles": [
     "Others/Jot Down/231114.md",
     "Others/Jot Down/231115.md",
