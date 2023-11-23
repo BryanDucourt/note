@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Others/Jot Down/231115.md",
+                "file": "Others/Jot Down/231108.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Jot Down/231115.md",
+                "file": "Others/Jot Down/231108.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Jot Down/231115.md",
+                "file": "Others/Jot Down/231108.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Jot Down/231115.md"
+                "file": "Others/Jot Down/231108.md"
               }
             }
           }
@@ -150,8 +150,8 @@
   },
   "active": "f68fb6cc363497b4",
   "lastOpenFiles": [
-    "Others/Jot Down/231114.md",
     "Others/Jot Down/231115.md",
+    "Others/Jot Down/231114.md",
     "Others/Jot Down/231108.md",
     "README.md",
     "Others/Jot Down/231021.md",
