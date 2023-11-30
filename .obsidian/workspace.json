@@ -143,9 +143,7 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "templater-obsidian:Templater": false
+      "command-palette:打开命令面板": false
     }
   },
   "active": "f68fb6cc363497b4",
