@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Others/Jot Down/231125.md",
+                "file": "Others/Miscellaneous/设计.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Jot Down/231125.md",
+                "file": "Others/Miscellaneous/设计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Jot Down/231125.md",
+                "file": "Others/Miscellaneous/设计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Jot Down/231125.md"
+                "file": "Others/Miscellaneous/设计.md"
               }
             }
           }
@@ -143,13 +143,17 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
   "active": "f68fb6cc363497b4",
   "lastOpenFiles": [
-    "Others/Jot Down/231115.md",
     "Others/Jot Down/231125.md",
+    "Others/Miscellaneous/设计.md",
+    "Others/Miscellaneous",
+    "Others/Jot Down/231115.md",
     "Others/Jot Down/231114.md",
     "Others/Jot Down/231031.md",
     "Others/Jot Down/231108.md",
@@ -176,7 +180,6 @@
     "Template/未命名.md",
     "Asset",
     "Template",
-    "Others",
-    "Summary"
+    "Others"
   ]
 }
