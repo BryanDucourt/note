@@ -17,3 +17,25 @@ pass
 
 # Secret sauce
 Introducing heuristic rules to assess and sort moves.By adjusting the parameters of the evaluation formula, each role could primarily focus on its own potential value, while also taking the center factor and the opponent's potential value into consideration. This approach not only enhances the effectiveness of decision-making but also significantly reduces the time required for searching and simulations.
+
+# Design
+# Main Framework
+- Initialization - Establishing Connection
+- Main Loop
+	- Receive engine messages
+	- Message parsing
+	- Corresponding processing
+	- Send messages to the engine
+
+## Search
+- Generate all possible moves
+	- To limit search breadth and reduce computation time, use heuristic rules to assign values to each move and sort them based on these values. Subsequent searches only expand the first n moves in the set of moves.
+- Use the negamax algorithm to search the decision tree, employing alpha-beta pruning.
+
+## Evaluation
+- First, check if there is a winner in the current position. Use DFS algorithm to check whether it is possible to reach the opposite edge from one edge.
+	- If there is a winner, return a value directly.
+	- If there is no winner
+		- Calculate the evaluation value of the current position and return it.
+
+- The method for calculating the evaluation value is explained in the code comments.
