@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Miscellaneous/detail.md",
+                "file": "Others/Miscellaneous/设计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Miscellaneous/detail.md",
+                "file": "Others/Miscellaneous/设计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Miscellaneous/detail.md"
+                "file": "Others/Miscellaneous/设计.md"
               }
             }
           }
@@ -160,10 +161,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "f68fb6cc363497b4",
+  "active": "541e75e9f7fcc3f1",
   "lastOpenFiles": [
-    "Others/Miscellaneous/设计.md",
     "Others/Miscellaneous/detail.md",
+    "Others/Miscellaneous/设计.md",
     "Others/Jot Down/231125.md",
     "Others/Miscellaneous",
     "Others/Jot Down/231115.md",
