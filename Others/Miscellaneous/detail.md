@@ -11,3 +11,8 @@ Multiple experiments were conducted during the process of adjusting search depth
 # Quantitative measures of performance (depth of search, number of play- outs per move, training time, etc.).
 The search depth is limited to 4, and the number of simulations per move is restricted to 5.
 # What you expect to have accomplished by submission.
+At the time of submission, our goal is for the agent to achieve victory within a reasonable time frame in the majority of games and to minimize the occurrence of unreasonable moves.
+#  Each member of the group should say something about the content, for example, their contribution to the project.
+pass
+
+# Secret sauce
