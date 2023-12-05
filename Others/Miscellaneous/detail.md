@@ -8,3 +8,6 @@ Rijswijck, J.V. (2000). Are Bees Better than Fruitflies? _Canadian Conference on
 Each decision-making step can be completed within approximately 15 seconds. Most of the time, the algorithm tends to choose the optimal or suboptimal solution for the current position. When playing as the red side, victory can be achieved in a very short time. However, when playing as the blue side, it may require slightly more time.
 # Any experiments used to inform decisions, or for evaluation.
 Multiple experiments were conducted during the process of adjusting search depth and breadth. Optimization adjustments were made to parameters controlling search depth and breadth based on the time spent on decision-making and the quality of decisions. Addressing issues related to suboptimal choices during the decision-making process, the evaluation algorithm underwent targeted optimizations. Different weights were assigned to components in the evaluation formula based on the player's role, and a parameter measuring the distance from a position to the center position was introduced.
+# Quantitative measures of performance (depth of search, number of play- outs per move, training time, etc.).
+The search depth is limited to 4, and the number of simulations per move is restricted to 5.
+# What you expect to have accomplished by submission.
