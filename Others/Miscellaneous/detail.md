@@ -16,4 +16,4 @@ At the time of submission, our goal is for the agent to achieve victory within a
 pass
 
 # Secret sauce
-Introducing heuristic rules to assess and sort moves.By adjusting the parameters of the evaluation formula, each role could primarily focus on its own potential value, while also taking the center factor and the opponent's potential value into consideration.
+Introducing heuristic rules to assess and sort moves.By adjusting the parameters of the evaluation formula, each role could primarily focus on its own potential value, while also taking the center factor and the opponent's potential value into consideration. This approach not only enhances the effectiveness of decision-making but also significantly reduces the time required for searching and simulations.
