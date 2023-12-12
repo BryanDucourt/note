@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "33dc66fd620941a8",
+        "id": "11e03f8b386b52c9",
         "type": "tabs",
         "children": [
           {
-            "id": "f68fb6cc363497b4",
+            "id": "246311436a915fcc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Others/Jot Down/未命名.md",
+                "file": "Others/Jot Down/231108.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Jot Down/未命名.md",
+                "file": "Others/Jot Down/231108.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Jot Down/未命名.md",
+                "file": "Others/Jot Down/231108.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Jot Down/未命名.md"
+                "file": "Others/Jot Down/231108.md"
               }
             }
           }
@@ -148,14 +148,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f68fb6cc363497b4",
+  "active": "246311436a915fcc",
   "lastOpenFiles": [
+    "Others/Jot Down/231115.md",
+    "Others/Jot Down/231125.md",
     "Others/Jot Down/231202.md",
     "Others/Jot Down/未命名.md",
-    "Others/Jot Down/231125.md",
     "Others/Miscellaneous/设计.md",
     "Others/Miscellaneous",
-    "Others/Jot Down/231115.md",
     "Others/Jot Down/231114.md",
     "Others/Jot Down/231031.md",
     "Others/Jot Down/231108.md",
