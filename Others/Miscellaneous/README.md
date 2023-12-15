@@ -1,6 +1,7 @@
 ## script使用方法
 ### 注意
-使用前需确认内核中是否包含ftrace，查看`/sys/kernel/debug/tracing`以确认。
+- 使用前需确认内核中是否包含ftrace，查看`/sys/kernel/debug/tracing`以确认。
+- 所有脚本均需root权限执行
 ### 概述
 
 script文件夹结构如下
@@ -31,5 +32,5 @@ objdump -t -C imu_test | grep onLive
 ```shell
 echo 'p:trigger /home/bryan/code/xsens_ros_mti_driver-xsens_ros_mti_driver_lib/build/imu_test:0x12c550' >> ${dir}/uprobe_events
 
-修改所有tracepoint中程序绝对路径以及对应的offset
+修改所有tracepoint中程序绝对路径以及对应的offset。由于主机roothub类型不同，probes.sh中的urb_giveback事件可能并不在`xhci_hcd`目录中，查询imu对应的usb roothub类型以及/sys/kernel/debug/tracing/events/目录下内容并进行修改。
 ```
