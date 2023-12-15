@@ -1,7 +1,13 @@
 ## 注意事项
 - 运行前确认`imu_test.cpp`中绑定的核心数目
 - script文件夹下的脚本使用前需确认内核中是否包含ftrace，查看`/sys/kernel/debug/tracing`以确认
-- 所有脚本均需root权限执行
+- 所有脚本均需root权限执行、
+## 编译
+```shell
+mkdir build && cd build
+cmake ..
+make
+```
 ## script使用方法
 ### 概述
 
