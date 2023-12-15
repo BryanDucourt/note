@@ -2,9 +2,11 @@
 script文件夹结构如下
 ```
 |- script
-	|- probes.sh 
+	|- probes.sh
 	|- trigger.sh
 ```
+`probes.sh`追踪程序中设置的所有tracepoint以及usb-host中的tracepoint
+`trigger.sh`只追踪`getImuDataFrame`读取成功后的tracepoint
 程序编译完成后，运行下列指令
 ```shell
 objdump -t -C imu_test | grep _dummy
