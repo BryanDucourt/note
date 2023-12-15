@@ -1,4 +1,10 @@
 ## script使用方法
+script文件夹结构如下
+```
+|- script
+	|- probes.sh 
+	|- trigger.sh
+```
 程序编译完成后，运行下列指令
 ```shell
 objdump -t -C imu_test | grep _dummy
@@ -20,6 +26,4 @@ objdump -t -C imu_test | grep onLive
 echo 'p:trigger /home/bryan/code/xsens_ros_mti_driver-xsens_ros_mti_driver_lib/build/imu_test:0x12c550' >> ${dir}/uprobe_events
 
 修改所有tracepoint中程序绝对路径以及对应的offset
-
-
 ```
