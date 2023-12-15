@@ -1,4 +1,8 @@
 ## script使用方法
+### 注意
+使用前需确认内核中是否包含ftrace，查看`/sys/kernel/debug/tracing`以确认。
+### 概述
+
 script文件夹结构如下
 ```
 |- script
