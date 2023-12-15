@@ -9,8 +9,6 @@ cmake ..
 make
 ```
 ## script使用方法
-### 概述
-
 script文件夹结构如下
 ```
 |- script
