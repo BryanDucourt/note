@@ -120,6 +120,12 @@
         }
       ],
       "runOnStartup": true
+    },
+    {
+      "name": "知识",
+      "id": "5da2ccc3-af19-4da9-82f5-fa86a0de8edb",
+      "commands": [],
+      "runOnStartup": false
     }
   ],
   "inputPrompt": "single-line",
