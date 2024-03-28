@@ -1,9 +1,8 @@
 ---
 标签:
   - paper
-Comments: 💡<br>💡
+Comments:
 ---
-{{title}}
 ## Metadata
 {{itemType}}      
 {{author}}      
