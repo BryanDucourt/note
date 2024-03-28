@@ -40,10 +40,10 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 -   实验针对的应用类型
 >researchers tried to manage the power issue for the CPU and the GPU, but they mostly focused on game applications, and thus, not optimized for general applications. Game applications generate frames continuously whereas general applications tend to produce frames intermittently depending on user interactions. Moreover, games typically use a different rendering pipeline than general Android applications.
 
-绝大多数为轻负载类型的应用：帧之间的变化不显著
+绝大多数为轻负载类型的应用，相邻帧之间的变化不显著
 - 使用的假设
 	- 任务执行时间与频率成反比
-	- 
+	- 负载恒定
 
 ## 实验方案是如何设计的？ 
 - 测量帧渲染时间，发现帧生成速度过快
