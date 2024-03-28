@@ -1,38 +1,8 @@
 {
   "choices": [
     {
-      "id": "2c9fa338-2d12-48d0-a108-9e835c37f5b5",
-      "name": "KN",
-      "type": "Template",
-      "command": true,
-      "templatePath": "Template/Knowledge.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "{{name}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "Knowledge"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": false,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
-    },
-    {
       "id": "2b4945c1-d26c-4ad3-a1d3-3f778590efbf",
-      "name": "test",
+      "name": "kn",
       "type": "Macro",
       "command": true,
       "macroId": "86adb3d8-b6e2-43dc-8fe0-38f74214e19f"

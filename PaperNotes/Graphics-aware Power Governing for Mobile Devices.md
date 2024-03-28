@@ -35,8 +35,7 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 - [[DVFS]]
 - [[SOC]]
 - [[UTIL]]
-- Android 图形管道
-- 大小核异构处理器
+- [[pipline]]
 ### 问题
 -   实验针对的应用类型
 >researchers tried to manage the power issue for the CPU and the GPU, but they mostly focused on game applications, and thus, not optimized for general applications. Game applications generate frames continuously whereas general applications tend to produce frames intermittently depending on user interactions. Moreover, games typically use a different rendering pipeline than general Android applications.
