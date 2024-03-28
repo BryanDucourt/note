@@ -12,7 +12,9 @@
       },
       "folder": {
         "enabled": true,
-        "folders": [],
+        "folders": [
+          "Knowledge"
+        ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
         "chooseFromSubfolders": false
