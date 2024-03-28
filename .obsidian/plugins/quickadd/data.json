@@ -46,29 +46,29 @@
       "id": "0f147f69-4fdf-4f05-b960-33688e111c17",
       "name": "todo",
       "type": "Capture",
-      "command": false,
+      "command": true,
       "appendLink": false,
-      "captureTo": "",
+      "captureTo": "Summary/Daily/{{date}}",
       "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
-        "enabled": false,
-        "createWithTemplate": false,
-        "template": ""
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "Template/Daily.md"
       },
       "format": {
         "enabled": false,
         "format": ""
       },
       "insertAfter": {
-        "enabled": false,
-        "after": "",
+        "enabled": true,
+        "after": "## Todo",
         "insertAtEnd": false,
         "considerSubsections": false,
         "createIfNotFound": false,
         "createIfNotFoundLocation": "top"
       },
       "prepend": false,
-      "task": false,
+      "task": true,
       "openFileInNewTab": {
         "enabled": false,
         "direction": "vertical",
