@@ -29,9 +29,23 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": false
+    },
+    {
+      "id": "74aea606-06e8-4e18-86d5-5e64b62b51e6",
+      "name": "知识",
+      "type": "Macro",
+      "command": true,
+      "macroId": "86adb3d8-b6e2-43dc-8fe0-38f74214e19f"
     }
   ],
-  "macros": [],
+  "macros": [
+    {
+      "name": "知识",
+      "id": "86adb3d8-b6e2-43dc-8fe0-38f74214e19f",
+      "commands": [],
+      "runOnStartup": false
+    }
+  ],
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "",
