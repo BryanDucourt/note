@@ -13,7 +13,7 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "{{date:YYMMDD}}",
+      "captureTo": "Others/Jot Down/{{date:YYMMDD}}",
       "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": true,
