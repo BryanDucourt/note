@@ -8,34 +8,39 @@
       "macroId": "86adb3d8-b6e2-43dc-8fe0-38f74214e19f"
     },
     {
-      "id": "d39ea8bc-5081-4c36-b0e4-a8f969357459",
+      "id": "72a8f56b-a53f-4da0-a741-59e38f569b99",
       "name": "jot",
-      "type": "Template",
+      "type": "Capture",
       "command": true,
-      "templatePath": "Template/JOT.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "{{date:YYMMDD}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "Others/Jot Down"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
       "appendLink": false,
+      "captureTo": "{{date:YYMMDD}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{value}}{{time}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
       "openFileInNewTab": {
         "enabled": false,
         "direction": "vertical",
         "focus": true
       },
       "openFile": false,
-      "openFileInMode": "default",
-      "fileExistsMode": "Append to the bottom of the file",
-      "setFileExistsBehavior": true
+      "openFileInMode": "default"
     }
   ],
   "macros": [
