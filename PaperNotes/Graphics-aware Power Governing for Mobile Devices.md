@@ -41,7 +41,8 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 >researchers tried to manage the power issue for the CPU and the GPU, but they mostly focused on game applications, and thus, not optimized for general applications. Game applications generate frames continuously whereas general applications tend to produce frames intermittently depending on user interactions. Moreover, games typically use a different rendering pipeline than general Android applications.
 
 ## 实验方案是如何设计的？ 
-
+- 测量帧渲染时间，发现帧生成速度过快
+	- 性能冗余，能源效率低下
 
 
 
