@@ -97,7 +97,7 @@
             },
             "format": {
               "enabled": true,
-              "format": "[[{name}]]"
+              "format": "[[{{NAME}}]]"
             },
             "insertAfter": {
               "enabled": false,
