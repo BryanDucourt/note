@@ -25,20 +25,22 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 
 
 
-## 这篇论文的研究动机
+## 研究动机
 
 
 
 
-## 这篇论文用到了哪些专业知识？阅读中你遇到了哪些问题？ 
+## 用到了哪些专业知识？遇到了哪些问题？ 
 ### 知识
 - DVFS
 - UTIL-WALT
+- Android 图形管道
+- 大小核异构处理器
 ### 问题
 -   
 >researchers tried to manage the power issue for the CPU and the GPU, but they mostly focused on game applications, and thus, not optimized for general applications. Game applications generate frames continuously whereas general applications tend to produce frames intermittently depending on user interactions. Moreover, games typically use a different rendering pipeline than general Android applications.
 
-## 这篇论文的实验方案是如何设计的？ 
+## 实验方案是如何设计的？ 
 
 
 
@@ -48,10 +50,11 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 
 
 
-## 这篇论文的主要贡献是什么？
+## 主要贡献是什么？
 
 - 根据VSync剩余时间调整CPU频率
-- 
+- 根据帧渲染的工作负载调整GPU频率
+- 小核簇上渲染
 
 ## 这篇论文在写作表达方面有哪些值得借鉴的地方？
 
