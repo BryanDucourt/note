@@ -12,14 +12,16 @@
       "name": "jot",
       "type": "Template",
       "command": true,
-      "templatePath": "",
+      "templatePath": "Template/JOT.md",
       "fileNameFormat": {
-        "enabled": false,
-        "format": ""
+        "enabled": true,
+        "format": "{{date:YYMMDD}}"
       },
       "folder": {
-        "enabled": false,
-        "folders": [],
+        "enabled": true,
+        "folders": [
+          "Others/Jot Down"
+        ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
         "chooseFromSubfolders": false
@@ -32,8 +34,8 @@
       },
       "openFile": false,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
+      "fileExistsMode": "Append to the bottom of the file",
+      "setFileExistsBehavior": true
     }
   ],
   "macros": [
