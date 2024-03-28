@@ -40,10 +40,86 @@
   ],
   "macros": [
     {
-      "name": "知识",
+      "name": "knowledge",
       "id": "86adb3d8-b6e2-43dc-8fe0-38f74214e19f",
-      "commands": [],
-      "runOnStartup": false
+      "commands": [
+        {
+          "name": "创建",
+          "type": "NestedChoice",
+          "id": "62c888ca-2acd-413e-8937-06537feb835c",
+          "choice": {
+            "id": "b15dc4bb-d1ef-4d06-a46e-1ae9dd0af887",
+            "name": "创建",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Template/Knowledge.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{name}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Knowledge"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        },
+        {
+          "name": "插入",
+          "type": "NestedChoice",
+          "id": "cd63c15d-e535-4f56-8200-d1f32dca4b48",
+          "choice": {
+            "id": "c8571e11-f41c-470d-824f-180054ab4e6e",
+            "name": "插入",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[[{name}]]"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": true
     }
   ],
   "inputPrompt": "single-line",
