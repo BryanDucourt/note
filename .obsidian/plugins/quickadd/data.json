@@ -31,8 +31,8 @@
       "setFileExistsBehavior": false
     },
     {
-      "id": "74aea606-06e8-4e18-86d5-5e64b62b51e6",
-      "name": "知识",
+      "id": "2b4945c1-d26c-4ad3-a1d3-3f778590efbf",
+      "name": "test",
       "type": "Macro",
       "command": true,
       "macroId": "86adb3d8-b6e2-43dc-8fe0-38f74214e19f"
@@ -120,12 +120,6 @@
         }
       ],
       "runOnStartup": true
-    },
-    {
-      "name": "知识",
-      "id": "5da2ccc3-af19-4da9-82f5-fa86a0de8edb",
-      "commands": [],
-      "runOnStartup": false
     }
   ],
   "inputPrompt": "single-line",
