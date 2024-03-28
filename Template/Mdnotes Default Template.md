@@ -7,8 +7,7 @@ Comments:
 {{itemType}}      
 {{author}}      
 {{date}}   
-{{collections}}  
-{{publicationTitle}}    
+{{collections}}   
   
 
 ## Abstract
