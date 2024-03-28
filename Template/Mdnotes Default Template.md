@@ -11,9 +11,8 @@ Comments:
 {{publicationTitle}}    
   
 
->[!abstract]- <center>Abstract</center>
->
->>{{abstractNote}}
+## Abstract
+{{abstractNote}}
 
 ## 你对此篇文献有何评价？
 
