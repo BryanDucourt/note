@@ -34,7 +34,7 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 ### 知识
 - [[DVFS]]
 - [[SOC]]
-- UTIL-WALT 
+- [[UTIL]]
 - Android 图形管道
 - 大小核异构处理器
 ### 问题
