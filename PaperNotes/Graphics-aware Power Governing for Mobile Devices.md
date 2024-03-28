@@ -35,8 +35,8 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 - DVFS
 - UTIL-WALT
 ### 问题
-- 
-> In [11-16], researchers tried to manage the power issue for the CPU and the GPU, but they mostly focused on game applications, and thus, not optimized for general applications. Game applications generate frames continuously whereas general applications tend to produce frames intermittently depending on user interactions. Moreover, games typically use a different rendering pipeline than general Android applications.
+-   
+>researchers tried to manage the power issue for the CPU and the GPU, but they mostly focused on game applications, and thus, not optimized for general applications. Game applications generate frames continuously whereas general applications tend to produce frames intermittently depending on user interactions. Moreover, games typically use a different rendering pipeline than general Android applications.
 
 ## 这篇论文的实验方案是如何设计的？ 
 
@@ -50,7 +50,8 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 
 ## 这篇论文的主要贡献是什么？
 
-
+- 根据VSync剩余时间调整CPU频率
+- 
 
 ## 这篇论文在写作表达方面有哪些值得借鉴的地方？
 
