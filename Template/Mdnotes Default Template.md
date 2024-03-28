@@ -3,14 +3,13 @@
   - paper
 Comments: 💡<br>💡
 ---
-
->[!info]- <center>Metadata</center>
->
->>{{itemType}}      
->>{{author}}      
->>{{date}}   
->>{{collections}}  
->>{{publicationTitle}}    
+{{title}}
+## Metadata
+{{itemType}}      
+{{author}}      
+{{date}}   
+{{collections}}  
+{{publicationTitle}}    
   
 
 >[!abstract]- <center>Abstract</center>
