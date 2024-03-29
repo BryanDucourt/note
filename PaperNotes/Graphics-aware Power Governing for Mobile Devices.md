@@ -38,7 +38,7 @@ CPU和GPU的联合调度
 - 根据什么指标选择核心
 
 通过什么指标评价收益?
-- Qoe/Response time/sched delay/...
+- Qoe/Response time/sched delay/能耗/...
 
 
 ## 研究动机
