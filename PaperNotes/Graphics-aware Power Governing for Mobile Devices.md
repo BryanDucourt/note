@@ -21,10 +21,10 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 >此问题的答案在笔记开头的Comments中回答
 
 
-## 感兴趣的点
+## 可能的方向
 
 CPU和GPU的联合调度
-- 现有的方法只考虑GPU/CPU；使用的模型比较简单
+- 现有的方法只考虑GPU/CPU？；使用的模型比较简单？
 - GPU的调度只考虑GPU本身的能效，不考虑任务的整体能效
 - GPU负载的预测
 
