@@ -23,7 +23,11 @@ Graphics increasingly play a key role in modern mobile devices. The graphics pip
 
 ## 感兴趣的点
 
-
+CPU和GPU的联合调度
+- 现有的方法只考虑GPU/CPU；使用的模型比较简单
+- 负载的计算特征
+	- 访存/CPU计算/GPU计算 比例
+	- 
 
 ## 研究动机
 
