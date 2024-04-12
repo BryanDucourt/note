@@ -1,23 +1,46 @@
 {
   "workspaces": {
-    "Bryan": {
+    "bryan": {
       "main": {
         "id": "30aa8162659ff05d",
         "type": "split",
         "children": [
           {
-            "id": "49e6e8ef40a0668a",
-            "type": "tabs",
+            "id": "cf1b10ea4773588b",
+            "type": "split",
             "children": [
               {
-                "id": "75f29559553ca965",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
+                "id": "49e6e8ef40a0668a",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "75f29559553ca965",
+                    "type": "leaf",
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "Others/Kanban/Bryan.md"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "30cc3cc81fc397da",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "40e7503eae2090f5",
+                    "type": "leaf",
+                    "state": {
+                      "type": "graph",
+                      "state": {}
+                    }
+                  }
+                ]
               }
-            ]
+            ],
+            "direction": "horizontal"
           }
         ],
         "direction": "vertical"
@@ -83,6 +106,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
+                    "file": "Others/Kanban/Bryan.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -99,6 +123,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
+                    "file": "Others/Kanban/Bryan.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -120,15 +145,25 @@
                 "type": "leaf",
                 "state": {
                   "type": "outline",
+                  "state": {
+                    "file": "Others/Kanban/Bryan.md"
+                  }
+                }
+              },
+              {
+                "id": "0e0e4dd31cac5c64",
+                "type": "leaf",
+                "state": {
+                  "type": "timeline",
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 4
           }
         ],
         "direction": "horizontal",
-        "width": 300,
-        "collapsed": true
+        "width": 397.5
       },
       "left-ribbon": {
         "hiddenItems": {
@@ -140,12 +175,13 @@
           "command-palette:打开命令面板": false,
           "templater-obsidian:Templater": false,
           "obsidian-excalidraw-plugin:新建绘图文件": false,
-          "workspaces:管理工作区布局": false
+          "workspaces:管理工作区布局": false,
+          "obsidian-day-planner:Timeline": false
         }
       },
       "active": "75f29559553ca965",
-      "mtime": "2024-04-12T20:55:02+08:00"
+      "mtime": "2024-04-12T22:00:00+08:00"
     }
   },
-  "active": "Bryan"
+  "active": "bryan"
 }
