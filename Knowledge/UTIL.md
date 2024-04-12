@@ -1,6 +1,7 @@
 ---
 状态: TODO
-tags: 
+tags:
+  - Knowledge
 aliases:
 ---
 
