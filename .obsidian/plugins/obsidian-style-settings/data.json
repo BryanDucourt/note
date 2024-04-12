@@ -6,5 +6,6 @@
   "blue-topaz-theme@@background-image-settings-command-palette-switch": true,
   "blue-topaz-theme@@background-image-settings-command-palette-same-as-workplace": true,
   "blue-topaz-theme@@toggle-bg-panel-page": true,
-  "blue-topaz-theme@@graph-canvas-bg@@light": "#000000"
+  "blue-topaz-theme@@graph-canvas-bg@@light": "#00000000",
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-autumn-topaz"
 }
