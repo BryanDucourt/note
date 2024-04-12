@@ -6,7 +6,7 @@ kanban-plugin: basic
 
 ## 项目
 
-- [ ] [[leju]]
+- [ ] [[leju]] ^52m75y
 - [ ] 调研：可编程内核
 - [ ] 调研：自动化裁剪子系统
 
@@ -19,10 +19,6 @@ kanban-plugin: basic
 
 - [ ] COSC3000
 - [ ] COMP9334project
-
-
-## 课业
-
 
 
 ## 读书

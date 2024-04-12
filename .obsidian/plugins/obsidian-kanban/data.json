@@ -1,3 +1,11 @@
 {
-  "new-note-folder": "Others/Kanban/Card"
+  "new-note-folder": "Others/Kanban/Card",
+  "metadata-keys": [
+    {
+      "metadataKey": "状态",
+      "label": "",
+      "shouldHideLabel": true,
+      "containsMarkdown": false
+    }
+  ]
 }
