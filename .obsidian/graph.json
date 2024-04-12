@@ -1,14 +1,14 @@
 {
   "collapse-filter": false,
-  "search": "",
-  "showTags": false,
+  "search": "- path:\"Others/Jot Down\"  ",
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:Knowledge  ",
+      "query": "tag:#Knowledge  ",
       "color": {
         "a": 1,
         "rgb": 14701138
@@ -37,7 +37,7 @@
     }
   ],
   "collapse-display": false,
-  "showArrow": true,
+  "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
