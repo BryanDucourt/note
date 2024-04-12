@@ -7,5 +7,12 @@
       "shouldHideLabel": true,
       "containsMarkdown": false
     }
+  ],
+  "tag-colors": [
+    {
+      "tagKey": "",
+      "color": "",
+      "backgroundColor": ""
+    }
   ]
 }
