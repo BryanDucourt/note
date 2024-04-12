@@ -76,6 +76,13 @@
       },
       "openFile": false,
       "openFileInMode": "default"
+    },
+    {
+      "id": "78df2b75-8276-4b77-922c-1ec5a60f8804",
+      "name": "c&p",
+      "type": "Macro",
+      "command": true,
+      "macroId": "a708bb65-8d5f-4be7-9e6e-d15c858ad522"
     }
   ],
   "macros": [
@@ -157,6 +164,25 @@
             "openFile": false,
             "openFileInMode": "default"
           }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "c&p",
+      "id": "a708bb65-8d5f-4be7-9e6e-d15c858ad522",
+      "commands": [
+        {
+          "name": "Obsidian Git: Commit all changes",
+          "type": "Obsidian",
+          "id": "88534cea-f074-4db4-bdf4-b1078736293d",
+          "commandId": "obsidian-git:commit"
+        },
+        {
+          "name": "Obsidian Git: Push",
+          "type": "Obsidian",
+          "id": "31e0fbdc-b1cc-4c0d-8394-e466feeaad87",
+          "commandId": "obsidian-git:push2"
         }
       ],
       "runOnStartup": false
