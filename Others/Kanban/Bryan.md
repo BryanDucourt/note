@@ -17,8 +17,9 @@ kanban-plugin: basic
 
 ## 兼职
 
-- [ ] COSC3000
-- [ ] COMP9334project
+- [ ] COSC3000<br>- [ ] ass1<br>- [ ] project
+- [ ] COMP9334project<br>- [ ] simulation<br>- [ ] verification<br>- [ ] design<br>- [ ] report
+- [ ] SOFT3202<br>- [ ] quiz1<br>- [ ] quiz2<br>- [ ] assignment
 
 
 ## 读书
