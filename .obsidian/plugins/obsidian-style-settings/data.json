@@ -1,5 +1,8 @@
 {
   "blue-topaz-theme@@background-settings-workplace-background-image": true,
   "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-blue-mountain",
-  "blue-topaz-theme@@background-image-settings-switch": true
+  "blue-topaz-theme@@background-image-settings-switch": true,
+  "blue-topaz-theme@@graph-circle@@light": "#C7EDCC",
+  "blue-topaz-theme@@graph-tag@@light": "#FFF2E2",
+  "blue-topaz-theme@@graph-circle-fill-highlight@@light": "#FDE6E0"
 }
