@@ -1,14 +1,43 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Knowledge  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:PaperNotes  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:Summary/Daily  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "tag:#工作  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
   "collapse-display": false,
-  "showArrow": false,
+  "showArrow": true,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
@@ -17,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.31214753848498666,
+  "scale": 0.70233196159122,
   "close": true
 }
