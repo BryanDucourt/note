@@ -6,7 +6,7 @@ kanban-plugin: basic
 
 ## 项目
 
-- [ ] leju
+- [ ] [[leju]]
 - [ ] 调研：可编程内核
 - [ ] 调研：自动化裁剪子系统
 
