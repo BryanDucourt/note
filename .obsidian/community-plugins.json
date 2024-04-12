@@ -3,5 +3,8 @@
   "obsidian-excalidraw-plugin",
   "obsidian-git",
   "templater-obsidian",
-  "quickadd"
+  "quickadd",
+  "obsidian-hover-editor",
+  "obsidian-kanban",
+  "obsidian-style-settings"
 ]
