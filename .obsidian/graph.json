@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "- path:\"Others/Jot Down\"  ",
+  "search": "- path:\"Others/Jot Down\" -path:Template  ",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -46,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.70233196159122,
+  "scale": 0.7023319615912191,
   "close": true
 }
