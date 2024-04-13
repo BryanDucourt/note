@@ -18,4 +18,3 @@
 - **Graphics Tools:** Primarily the self-developed ray tracing engine. Supplementary tools may include OpenGL or DirectX for initial scene setup and debugging.
 - **Techniques Demonstrated:** Advanced ray tracing techniques such as path tracing, photon mapping, and volume rendering.
 - The results will showcase high-quality images produced by ray tracing rendering technology, as well as the effects of different techniques used during the rendering process.
-This project explores complex interactions of light in a 3D environment through implementing a ray tracing rendering engine, enhancing personal expertise in computer graphics and potentially contributing to fields like movie production and game development.
