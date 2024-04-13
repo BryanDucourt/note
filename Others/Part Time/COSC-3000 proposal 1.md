@@ -13,18 +13,8 @@
 - Conducting model evaluation using metrics such as Mean Squared Error (MSE) and accuracy to assess model performance.
 **Data - What is your data source, and how will you obtain it?**
 - **Data source:** Mainly from public financial data APIs like Yahoo Finance and Google Finance for historical bitcoin data.
-- **Method of acquisition:** Using Python scripts with libraries such as `pandas_datareader` to fetch data.
-- **Sample data (table):**
-
-|Date|Open|Close|High|Low|Volume|
-|---|---|---|---|---|---|
-|2024-04-10|132|135|136|131|210,000,000|
-|2024-04-09|130|132|133|129|180,000,000|
-
+- **Method of acquisition:** Using Python scripts with libraries such as `pandas_datareader` to fetch data. Or maybe other methods such as `request`.
 **Graphics - What graphics tools will you use, and what techniques will you demonstrate?**
-
 - **Graphics Tools:** Python’s Matplotlib and Seaborn libraries for creating visualization charts such as time series forecasts and feature importance graphs.
 - **Techniques Demonstrated:** Time series analysis, forecast visualization, and graphical presentation of model performance and error analysis.
 - Visualizations will help in intuitively displaying bitcoin trends, model predictions, and important data features.
-
-This project aims to develop a reliable tool for predicting bitcoin market trends, helping investors better understand and anticipate market movements, thus making more reasoned investment decisions.

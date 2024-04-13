@@ -1,4 +1,4 @@
-### Ray Tracing Rendering Project
+# Ray Tracing Rendering Project
 **What - What is the topic and goal of your project?**
 - **Topic:** Creating a highly realistic three-dimensional scene rendering using ray tracing algorithms.
 - **Goal:** To develop a ray tracing rendering engine that simulates complex lighting effects such as reflections, refractions, and shadows to produce lifelike visual effects.
