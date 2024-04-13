@@ -83,6 +83,41 @@
       "type": "Macro",
       "command": true,
       "macroId": "a708bb65-8d5f-4be7-9e6e-d15c858ad522"
+    },
+    {
+      "id": "ccf5501c-3aa2-464c-b77b-d26d7bed5d0b",
+      "name": "spark",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "Spark/{{date}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": false,
+        "format": ""
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
     }
   ],
   "macros": [
