@@ -14,7 +14,7 @@ Comments:
 - 原文
 	To master the complexity of software systems in the presence of unexpected events potentially aﬀecting system operation, the Autonomic Computing Initiative [16] aims to build systems that have the ability to control and organize themselves to meet unforeseen changes in the hard- and software environment.
 - 翻译
-	为了应对可能影响系统运行的意外事件，自主计算倡议旨在构建具备自我控制和自我组织能力的系统，以应对硬件和软件环境的不可预见变化。自主计算的基本原则包括自动配置、自我优化、自我修复和自我保护。由于自主系统必须根据运行时条件的变化调整其行为，因此需要采用动态的面向方面的编程方法来实现自主计算功能。本文介绍了 TOSKANA 工具包，该工具包用于将动态方面集成到操作系统内核中，作为计算机系统的核心部分，以监控当前系统操作和资源使用情况。TOSKANA 提供了针对内核函数的前置、后置和环绕建议，并支持定义切入点以及将方面本身作为动态可替换的内核模块实现。通过几个示例演示了在操作系统内核中提供自主计算功能的横切性质。性能结果展示了使用 TOSKANA 带来的方面部署开销。
+	为了应对可能影响系统运行的意外事件，自主计算倡议旨在构建具备自我控制和自我组织能力的系统，以应对硬件和软件环境的不可预见变化。自主计算的基本原则包括自动配置、自我优化、自我修复和自我保护。由于自主系统必须根据运行时条件的变化调整其行为，因此需要采用动态的面向方面的编程方法来实现自主计算功能。本文介绍了 TOSKANA 工具包，该工具包用于将动态方面集成到操作系统内核中，作为计算机系统的核心部分，以监控当前系统操作和资源使用情况。TOSKANA 提供了针对内核函数的前置、后置和环绕建议，并支持定义切入点以及将方面本身作为动态可替换的内核模块实现。通过几个示例演示了在操作系统内核中提供自主计算功能的横切性质。性能结果展示了使用 TOSKANA 带来的方面部署开销。 ^2e2f18
 
 ## 你对此篇文献有何评价？
 
