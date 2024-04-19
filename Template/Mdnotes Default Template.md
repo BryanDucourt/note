@@ -10,7 +10,6 @@ Comments:
 {{collections}}   
   
 
-## Abstract
 {{abstractNote}}
 
 ## 你对此篇文献有何评价？
@@ -52,11 +51,11 @@ Comments:
 
 
 
->[!hint] <center>Zotero links</center>
->
->{{localLibrary}}    
->{{cloudLibrary}}  
->{{url}}  
->{{DOI}}    
->{{pdfAttachments}}  
->{{citekey}}
+Zotero links
+
+{{localLibrary}}    
+{{cloudLibrary}}  
+{{url}}  
+{{DOI}}    
+{{pdfAttachments}}  
+{{citekey}}
