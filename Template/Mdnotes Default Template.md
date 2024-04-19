@@ -1,6 +1,7 @@
 ---
 标签:
   - paper
+  -  open
 Comments:
 ---
 ## Metadata
