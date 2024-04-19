@@ -1,38 +1,24 @@
 {
   "collapse-filter": false,
   "search": "- path:\"Others/Jot Down\" -path:Template  ",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": true,
+  "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "tag:#Knowledge  ",
+      "query": "path:Knowledge  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 14048348
       }
     },
     {
       "query": "path:PaperNotes  ",
       "color": {
         "a": 1,
-        "rgb": 14725458
-      }
-    },
-    {
-      "query": "path:Summary/Daily  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    },
-    {
-      "query": "tag:#工作  ",
-      "color": {
-        "a": 1,
-        "rgb": 5431378
+        "rgb": 14069084
       }
     }
   ],
@@ -46,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7023319615912191,
+  "scale": 0.7023319615912188,
   "close": true
 }
