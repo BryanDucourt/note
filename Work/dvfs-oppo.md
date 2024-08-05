@@ -11,3 +11,5 @@
 定义输入，输出，步骤和主要算法。（启发式即可）
 输入：PMU（CPU、OC、MEM），频率（CPU、OC、MEM）、性能指标（IPS、CPI、Stall）
 输出：CPU、OC、MEM的频率组合
+步骤：
+主要算法：
