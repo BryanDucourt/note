@@ -1,7 +1,9 @@
 ---
 标签:
   - paper
-  -  open
+  - open
+  - Robotic
+  - LLM
 Comments:
 ---
 ## Metadata
