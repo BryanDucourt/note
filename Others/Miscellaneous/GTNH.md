@@ -6,6 +6,7 @@
 - private
 	- 0：工业温室
 	- 1：高炉
+	- 2：工业屠宰
 - public
 	- 3：pt
 # TODO
