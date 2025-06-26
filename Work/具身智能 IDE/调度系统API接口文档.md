@@ -27,6 +27,8 @@ dev域名：
 | -------------------- | ------ | --- | ----- | ------------ |
 | kind                 | string | 是   | 固定值   | Task         |
 | apiVersion           | string | 是   | api版本 | resources/v1 |
+| name                 | string | 否   |       |              |
+| namespace            | string | 是   |       |              |
 | spec                 | object |     |       |              |
 | &emsp;\|--name       | string | 是   |       |              |
 | &emsp;\|--desc       | object |     |       |              |
