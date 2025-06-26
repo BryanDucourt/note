@@ -49,12 +49,15 @@ dev域名：
 }
 ```
 ### 响应参数
-| 字段名      | 类型     | 说明        | 示例值  |
-| -------- | ------ | --------- | ---- |
-| taskname | string | task的唯一标识 | Test |
-| uuid     | string | UUID      |      |
+| 字段名      | 类型     | 说明        | 示例值                        |
+| -------- | ------ | --------- | -------------------------- |
+| taskname | string | task的唯一标识 | Test-20250626T184243-42d50 |
+| uuid     | string | UUID      | 20250626T184243-42d50      |
 示例值
-```
+```json
+{
+	"taskname":"
+}
 ```
 ## 运行单个group<a id="run_single"/>
 ## 批量运行group<a id="run_batch"/>
