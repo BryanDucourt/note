@@ -21,7 +21,7 @@ dev域名：
 | 字段名       | 类型     | 必填  | 说明  | 示例值  |
 | --------- | ------ | --- | --- | ---- |
 | namespace | string | 否   |     | Test |
-### 相应参数
+### 响应参数
 
 ## 运行单个group<a id="run_single"/>
 ## 批量运行group<a id="run_batch"/>
