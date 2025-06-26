@@ -63,12 +63,18 @@ dev域名：
 ## 运行group
 > POST /framework/v1/debug
 
-> 请求url格式例子：/framework/v1/debug?taskname=T1-20250626T184243-42d50
+> 请求url格式例子：/framework/v1/debug?taskname=T1-20250626T184243-42d50&namespace=test
 ### 请求参数
+#### query
+
 | 字段名       | 类型     | 必填  | 说明        | 示例值                      |
 | --------- | ------ | --- | --------- | ------------------------ |
 | taskname  | string | 是   | task的唯一标识 | T1-20250626T184243-42d50 |
 | namespace | string | 是   | namespace | test                     |
+#### body
+填充了input参数的行为模板json string
+示例
+
 
 ## 重复运行group
 | 字段名       | 类型     | 必填  | 说明                                  | 示例值                         |
