@@ -338,10 +338,17 @@ dev域名：
 # 查询类接口
 两种方案
 - 封装专门的查询接口，一次性返回group及其所有action的状态信息，在接口处做schema
-- 使用原始的查询接口，后端处理
+- 使用原始的查询接口，后端schema，分别查询group及其action的状态信息
 方案1
 ## 单个查询group
 > GET /framework/v1/debug/group
 
-> 请求url格式例子：/framework/v1/debug/group?
+> 请求url格式例子：/framework/v1/debug/group?groupname=T1.G2-20250626T184243-42d50
+
+### 请求参数
+#### query
+| 字段名       | 类型     | 必填  | 说明         | 示例值                         |
+| --------- | ------ | --- | ---------- | --------------------------- |
+| groupname | string | 是   | group的唯一标识 | T1.G1-20250626T184243-42d50 |
+
 ## 批量查询group
