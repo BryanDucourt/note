@@ -62,7 +62,7 @@ dev域名：
 }
 ```
 ## 运行group
-> POST /framework/v1/debug
+> POST /framework/v1/debug/group
 
 > 请求url格式例子：/framework/v1/debug?taskname=T1-20250626T184243-42d50&namespace=test&ide_id=grab01
 ### 请求参数
@@ -175,7 +175,7 @@ dev域名：
 ## 重复运行group
 > PUT /framework/v1/debug/group
 
-> 请求url格式例子：/framework/v1/debug?taskname=T1-20250626T184243-42d50&namespace=test&groupname=T1.G1-20250626T184243-42d50
+> 请求url格式例子：/framework/v1/debug/group?taskname=T1-20250626T184243-42d50&namespace=test&groupname=T1.G1-20250626T184243-42d50
 ### query
 
 | 字段名       | 类型     | 必填  | 说明         | 示例值                         |
@@ -282,7 +282,9 @@ dev域名：
 }
 ```
 ## 批量运行group
-> 
+> POST /framework/v1/debug/groups
+
+> 请求url格式例子：/framework/v1/debug/groups?taskname=T1-20250626T184243-42d50&namespace=test
 ### 请求参数
 #### query
 
@@ -335,10 +337,11 @@ dev域名：
 ```
 # 查询类接口
 两种方案
-- 封装专门的查询接口，在接口处做schema
+- 封装专门的查询接口，一次性返回group及其所有action的状态信息，在接口处做schema
 - 使用原始的查询接口，后端处理
 方案1
 ## 单个查询group
+> GET /framework/v1/debug/group
 
-
+> 请求url格式例子：/framework/v1/debug/group?
 ## 批量查询group
