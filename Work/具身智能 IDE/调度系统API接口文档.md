@@ -343,12 +343,18 @@ dev域名：
 ## 单个查询group
 > GET /framework/v1/debug/group
 
-> 请求url格式例子：/framework/v1/debug/group?groupname=T1.G2-20250626T184243-42d50
+> 请求url格式例子：/framework/v1/debug/group?groupname=T1.G2-20250626T184243-42d50&namespace=Test&ide_id=grab01
 
 ### 请求参数
 #### query
 | 字段名       | 类型     | 必填  | 说明         | 示例值                         |
 | --------- | ------ | --- | ---------- | --------------------------- |
 | groupname | string | 是   | group的唯一标识 | T1.G1-20250626T184243-42d50 |
-
+| namespace | string | 是   | namespace  | Test                        |
+| ide_ie    | string | 是   | ide唯一标识    | grab01                      |
+### 响应参数
+| 字段名       | 类型     | 说明         | 示例值                         |
+| --------- | ------ | ---------- | --------------------------- |
+| groupname | string | group的唯一标识 | T1.G1-20250626T184243-42d50 |
+|           |        |            |                             |
 ## 批量查询group
