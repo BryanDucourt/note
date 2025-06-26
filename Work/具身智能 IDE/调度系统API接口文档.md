@@ -164,5 +164,5 @@ dev域名：
 | groupname | string | 是   | group的唯一标识，空值创建新的group，非空值重新运行group | T1.G1-20250626T184243-42d50 |
 ## 批量运行group
 
-## 单个查询
-## 批量查询
+## 单个查询group
+## 批量查询group
