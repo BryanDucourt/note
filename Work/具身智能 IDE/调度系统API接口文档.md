@@ -33,11 +33,29 @@ dev域名：
 | &emsp;\|--name       | string | 是   | task名称                | T1           |
 | &emsp;\|--desc       | object |     |                       |              |
 | &emsp;&emsp;\|--docs | string | 是   | task说明                | “演示流程”       |
-
+示例值
+```json
+{
+	"kind": "Task",
+	"apiVersion": "resouces/v1",
+	"name": "T1",
+	"namespace": "test",
+	"spec": {
+		"name": "T1",
+		"desc": {
+			"docs": "演示流程"
+		}
+	}
+}
+```
 ### 响应参数
 | 字段名      | 类型     | 说明        | 示例值  |
 | -------- | ------ | --------- | ---- |
 | taskname | string | task的唯一标识 | Test |
+| uuid     | string | UUID      |      |
+示例值
+```
+```
 ## 运行单个group<a id="run_single"/>
 ## 批量运行group<a id="run_batch"/>
 ## 重复运行group<a id="rerun"/>
