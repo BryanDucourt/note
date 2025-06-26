@@ -56,10 +56,12 @@ dev域名：
 示例值
 ```json
 {
-	"taskname":"
+	"taskname":"Test-20250626T184243-42d50",
+	"uuid":"20250626T184243-42d50"
 }
 ```
 ## 运行单个group<a id="run_single"/>
+
 ## 批量运行group<a id="run_batch"/>
 ## 重复运行group<a id="rerun"/>
 ## 单个查询<a id="query_single"/>
