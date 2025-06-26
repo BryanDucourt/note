@@ -23,16 +23,17 @@ dev域名：
 | --------- | ------ | --- | --- | ---- |
 | namespace | string | 否   |     | Test |
 #### body
-| 字段名                  | 类型     | 必填  | 说明    | 示例值          |
-| -------------------- | ------ | --- | ----- | ------------ |
-| kind                 | string | 是   | 固定值   | Task         |
-| apiVersion           | string | 是   | api版本 | resources/v1 |
-| name                 | string | 否   |       |              |
-| namespace            | string | 是   |       |              |
-| spec                 | object |     |       |              |
-| &emsp;\|--name       | string | 是   |       |              |
-| &emsp;\|--desc       | object |     |       |              |
-| &emsp;&emsp;\|--docs | string | 是   |       |              |
+| 字段名                  | 类型     | 必填  | 说明                    | 示例值          |
+| -------------------- | ------ | --- | --------------------- | ------------ |
+| kind                 | string | 是   | 固定值                   | Task         |
+| apiVersion           | string | 是   | api版本                 | resources/v1 |
+| name                 | string | 是   | task名称，与spec.name保持一致 | T1           |
+| namespace            | string | 是   | namespace             | test         |
+| spec                 | object |     |                       |              |
+| &emsp;\|--name       | string | 是   | task名称                | T1           |
+| &emsp;\|--desc       | object |     |                       |              |
+| &emsp;&emsp;\|--docs | string | 是   | task说明                | “演示流程”       |
+
 ### 响应参数
 | 字段名      | 类型     | 说明        | 示例值  |
 | -------- | ------ | --------- | ---- |
