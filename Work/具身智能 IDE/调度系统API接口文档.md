@@ -23,16 +23,14 @@ dev域名：
 | --------- | ------ | --- | --- | ---- |
 | namespace | string | 否   |     | Test |
 #### body
-| 字段名                  | 类型     | 必填  | 说明  | 示例值  |
-| -------------------- | ------ | --- | --- | ---- |
-| kind                 | string | 是   | 固定值 | Task |
-| apiVersion           | string |     |     |      |
-| name                 | string |     |     |      |
-| namespace            | string |     |     |      |
-| spec                 |        |     |     |      |
-| &emsp;\|--name       |        |     |     |      |
-| &emsp;\|--desc       |        |     |     |      |
-| &emsp;&emsp;\|--docs |        |     |     |      |
+| 字段名                  | 类型     | 必填  | 说明    | 示例值          |
+| -------------------- | ------ | --- | ----- | ------------ |
+| kind                 | string | 是   | 固定值   | Task         |
+| apiVersion           | string | 是   | api版本 | resources/v1 |
+| spec                 | object |     |       |              |
+| &emsp;\|--name       | string | 是   |       |              |
+| &emsp;\|--desc       | object |     |       |              |
+| &emsp;&emsp;\|--docs | string | 是   |       |              |
 ### 响应参数
 | 字段名      | 类型     | 说明        | 示例值  |
 | -------- | ------ | --------- | ---- |
