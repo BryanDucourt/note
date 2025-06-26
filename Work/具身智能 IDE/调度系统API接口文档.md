@@ -282,7 +282,19 @@ dev域名：
 ```
 ## 批量运行group
 ### 请求参数
+#### query
 
+| 字段名       | 类型     | 必填  | 说明        | 示例值                      |
+| --------- | ------ | --- | --------- | ------------------------ |
+| taskname  | string | 是   | task的唯一标识 | T1-20250626T184243-42d50 |
+| namespace | string | 是   | namespace | test                     |
+#### body
+| 字段名                | 类型     | 必填  | 说明                         | 示例值    |
+| ------------------ | ------ | --- | -------------------------- | ------ |
+| groups             | array  | 是   | group列表                    |        |
+| &emsp;\|-ide_id    | string | 是   | ide侧的唯一标识                  | grab01 |
+| &emsp;\|-templates | string | 是   | 填充了input参数的行为模版json string |        |
+|                    |        |     |                            |        |
 ### 响应参数
 
 
