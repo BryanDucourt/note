@@ -22,7 +22,9 @@ dev域名：
 | --------- | ------ | --- | --- | ---- |
 | namespace | string | 否   |     | Test |
 ### 响应参数
-
+| 字段名      | 类型     | 说明        | 示例值  |
+| -------- | ------ | --------- | ---- |
+| taskname | string | task的唯一标识 | Test |
 ## 运行单个group<a id="run_single"/>
 ## 批量运行group<a id="run_batch"/>
 ## 重复运行group<a id="rerun"/>
