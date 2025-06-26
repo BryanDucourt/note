@@ -351,7 +351,7 @@ dev域名：
 | --------- | ------ | --- | ---------- | --------------------------- |
 | groupname | string | 是   | group的唯一标识 | T1.G1-20250626T104243-42d50 |
 | namespace | string | 是   | namespace  | Test                        |
-| ide_ie    | string | 是   | ide唯一标识    | grab01                      |
+| ide_id    | string | 是   | ide唯一标识    | grab01                      |
 ### 响应参数
 | 字段名                       | 类型     | 说明                 | 示例值                            |
 | ------------------------- | ------ | ------------------ | ------------------------------ |
@@ -404,3 +404,18 @@ dev域名：
 }
 ```
 ## 批量查询group
+> GET /framework/v1/debug/groups
+
+> 请求url格式例子：/framework/v1/debug/groups?taskname=T1-20250626T104243-42d50&namespace=Test
+### 请求参数
+#### query
+| 字段名       | 类型     | 必填  | 说明               | 示例值                      |
+| --------- | ------ | --- | ---------------- | ------------------------ |
+| taskname  | string | 是   | group所属task的唯一标识 | T1-20250626T104243-42d50 |
+| namespace | string | 是   | namespace        | Test                     |
+#### body
+| 字段名                 | 类型     | 必填  | 说明         | 示例值 |
+| ------------------- | ------ | --- | ---------- | --- |
+| groups              | array  | 是   | 待查询group列表 |     |
+| &emsp;\|--groupname | string | 是   | group唯一标识  |     |
+### 响应参数
