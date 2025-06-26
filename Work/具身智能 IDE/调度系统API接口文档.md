@@ -353,12 +353,17 @@ dev域名：
 | namespace | string | 是   | namespace  | Test                        |
 | ide_ie    | string | 是   | ide唯一标识    | grab01                      |
 ### 响应参数
-| 字段名        | 类型     | 说明         | 示例值                         |
-| ---------- | ------ | ---------- | --------------------------- |
-| groupname  | string | group的唯一标识 | T1.G1-20250626T184243-42d50 |
-| namespace  |        |            |                             |
-| belong     |        |            |                             |
-| status     |        |            |                             |
-| &emsp;\|-- |        |            |                             |
-|            |        |            |                             |
+| 字段名                 | 类型     | 说明         | 示例值                         |
+| ------------------- | ------ | ---------- | --------------------------- |
+| groupname           | string | group的唯一标识 | T1.G1-20250626T184243-42d50 |
+| namespace           | string | namespace  | Test                        |
+| belong              | string | 父节点唯一标识    | T1-20250626T184243-42d50    |
+| status              | object | group状态信息  |                             |
+| &emsp;\|--start     | string | 开始执行时间     |                             |
+| &emsp;\|--creat     | string | 创建时间       |                             |
+| &emsp;\|--finish    | string | 结束时间       |                             |
+| &emsp;\|--last_time | string | 上次查询时间     |                             |
+| &emsp;\|--phase     | string | 当前状态       |                             |
+| actions             | array  |            |                             |
+|                     |        |            |                             |
 ## 批量查询group
