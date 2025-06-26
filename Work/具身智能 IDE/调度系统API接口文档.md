@@ -63,7 +63,7 @@ dev域名：
 ## 运行group
 > POST /framework/v1/debug
 
-> 请求url格式例子：/framework/v1/debug?taskname=T1-20250626T184243-42d50&namespace=test
+> 请求url格式例子：/framework/v1/debug?taskname=T1-20250626T184243-42d50&namespace=test&ide_id=grab01
 ### 请求参数
 #### query
 
@@ -71,6 +71,7 @@ dev域名：
 | --------- | ------ | --- | --------- | ------------------------ |
 | taskname  | string | 是   | task的唯一标识 | T1-20250626T184243-42d50 |
 | namespace | string | 是   | namespace | test                     |
+| ide_id    | string | 是   | ide侧的唯一标识 | grab01                   |
 #### body
 填充了input参数的行为模板json string
 示例值
