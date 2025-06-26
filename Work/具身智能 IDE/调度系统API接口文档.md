@@ -11,7 +11,7 @@ dev域名：
 - [单个查询](##单个查询group)
 - [批量查询](##批量查询group)
 # 生成类接口
-## 调试流程开始<a id="begin"/>
+## 调试流程开始
 
 > POST /framework/v1/task
 
@@ -23,6 +23,7 @@ dev域名：
 | 字段名       | 类型     | 必填  | 说明  | 示例值  |
 | --------- | ------ | --- | --- | ---- |
 | namespace | string | 否   |     | Test |
+
 #### body
 | 字段名                  | 类型     | 必填  | 说明                    | 示例值          |
 | -------------------- | ------ | --- | --------------------- | ------------ |
@@ -34,6 +35,7 @@ dev域名：
 | &emsp;\|--name       | string | 是   | task名称                | T1           |
 | &emsp;\|--desc       | object |     |                       |              |
 | &emsp;&emsp;\|--docs | string | 是   | task说明                | “演示流程”       |
+
 示例值
 ```json
 {
@@ -49,11 +51,13 @@ dev域名：
 	}
 }
 ```
+
 ### 响应参数
 | 字段名      | 类型     | 说明        | 示例值                        |
 | -------- | ------ | --------- | -------------------------- |
 | taskname | string | task的唯一标识 | Test-20250626T104243-42d50 |
 | uuid     | string | UUID      | 20250626T104243-42d50      |
+
 示例值
 ```json
 {
@@ -61,6 +65,7 @@ dev域名：
 	"uuid":"20250626T104243-42d50"
 }
 ```
+
 ## 运行group
 > POST /framework/v1/debug/group
 
@@ -83,7 +88,7 @@ dev域名：
 ```json
 {
 	"ide_id":"grab01",
-	"template":"
+	"template":‘
 	{  
 	  "name": "move",  
 	  "desc": {  
@@ -158,9 +163,10 @@ dev域名：
 	    0,  
 	    0  
 	  ]  
-	}"
+	}’
 }
 ```
+
 ### 响应参数
 | 字段名       | 类型     | 说明         | 示例值                         |
 | --------- | ------ | ---------- | --------------------------- |
@@ -183,6 +189,7 @@ dev域名：
 | taskname  | string | 是   | task的唯一标识  | T1-20250626T104243-42d50    |
 | namespace | string | 是   | namespace  | test                        |
 | groupname | string | 是   | group的唯一标识 | T1.G1-20250626T104243-42d50 |
+
 ### body
 | 字段名      | 类型     | 必填  | 说明                         | 示例值    |
 | -------- | ------ | --- | -------------------------- | ------ |
@@ -292,12 +299,14 @@ dev域名：
 | --------- | ------ | --- | --------- | ------------------------ |
 | taskname  | string | 是   | task的唯一标识 | T1-20250626T104243-42d50 |
 | namespace | string | 是   | namespace | test                     |
+
 #### body
 | 字段名               | 类型     | 必填  | 说明                         | 示例值    |
 | ----------------- | ------ | --- | -------------------------- | ------ |
 | groups            | array  | 是   | group列表                    |        |
 | &emsp;\|-ide_id   | string | 是   | ide侧的唯一标识                  | grab01 |
 | &emsp;\|-template | string | 是   | 填充了input参数的行为模版json string |        |
+
 示例值
 ```json
 {
@@ -320,6 +329,7 @@ dev域名：
 | groupnames          | array  | group标识列表  |                             |
 | &emsp;\|--ide_id    | string | ide唯一标识    | grab01                      |
 | &emsp;\|--groupname | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
+
 示例值
 ```json
 {
@@ -354,6 +364,7 @@ dev域名：
 | groupname | string | 是   | group的唯一标识 | T1.G1-20250626T104243-42d50 |
 | namespace | string | 是   | namespace  | Test                        |
 | ide_id    | string | 是   | ide唯一标识    | grab01                      |
+
 ### 响应参数
 | 字段名                       | 类型     | 说明                 | 示例值                            |
 | ------------------------- | ------ | ------------------ | ------------------------------ |
@@ -376,6 +387,7 @@ dev域名：
 | &emsp;&emsp;\|--finish    | string | 结束时间               | 2025-06-26T15:16:38.545Z       |
 | &emsp;&emsp;\|--last_time | string | 上次查询时间             | 2025-06-26T15:16:38.545Z       |
 | &emsp;&emsp;\|--phase     | string | 当前状态               | Running                        |
+
 示例值
 ```json
 {
@@ -420,6 +432,7 @@ dev域名：
 | 字段名    | 类型    | 说明                    | 示例值 |
 | ------ | ----- | --------------------- | --- |
 | groups | array | group信息列表，成员结构与单个查询相同 |     |
+
 示例值
 ```json
 {
