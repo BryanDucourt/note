@@ -73,8 +73,84 @@ dev域名：
 | namespace | string | 是   | namespace | test                     |
 #### body
 填充了input参数的行为模板json string
-示例
-
+示例值
+```json
+	{  
+  "name": "move",  
+  "desc": {  
+    "label": {  
+      "type": 1,  
+      "name_zh": "移动"  
+    },  
+    "docs": "移动动作，通常用于将机器人从一个位置移动到另一个位置。"  
+  },  
+  "input": {  
+    "conditions": [],  
+    "parents": [],  
+    "devices": [  
+      {  
+        "name": "Robot1",  
+        "expected_properties": {  
+          "name": {  
+            "value": "device1"  
+          },  
+          "strategy": {  
+            "value": "nominate"  
+          }  
+        },  
+        "abilities": [  
+          "Move"  
+        ]  
+      }  
+    ],  
+    "parameters": [  
+      {  
+        "name": "target_position",  
+        "type": "compose",  
+        "value": "[0,0,0]",  
+        "from": "R1"  
+      },  
+      {  
+        "name": "move_duration",  
+        "type": "double",  
+        "value": "2.0",  
+        "from": "R1"  
+      }  
+    ]  
+  },  
+  "actions": [  
+    {  
+      "name": "move_to",  
+      "input": {  
+        "conditions": [],  
+        "parents": [],  
+        "parameters": [  
+          {  
+            "name": "target_position",  
+            "type": "compose",  
+            "value": "[0,0,0]",  
+            "from": "R1"  
+          },  
+          {  
+            "name": "move_duration",  
+            "type": "double",  
+            "value": "2.0",  
+            "from": "R1"  
+          }  
+        ]  
+      },  
+      "serialized": "json string",  
+      "desc": {  
+        "docs": "移动action，输入参数包括目标位置和移动持续时间。"  
+      }  
+    }  
+  ],  
+  "replicas": [  
+    0,  
+    0  
+  ]  
+}
+```
 
 ## 重复运行group
 | 字段名       | 类型     | 必填  | 说明                                  | 示例值                         |
