@@ -289,14 +289,39 @@ dev域名：
 | taskname  | string | 是   | task的唯一标识 | T1-20250626T184243-42d50 |
 | namespace | string | 是   | namespace | test                     |
 #### body
-| 字段名                | 类型     | 必填  | 说明                         | 示例值    |
-| ------------------ | ------ | --- | -------------------------- | ------ |
-| groups             | array  | 是   | group列表                    |        |
-| &emsp;\|-ide_id    | string | 是   | ide侧的唯一标识                  | grab01 |
-| &emsp;\|-templates | string | 是   | 填充了input参数的行为模版json string |        |
-|                    |        |     |                            |        |
+| 字段名               | 类型     | 必填  | 说明                         | 示例值    |
+| ----------------- | ------ | --- | -------------------------- | ------ |
+| groups            | array  | 是   | group列表                    |        |
+| &emsp;\|-ide_id   | string | 是   | ide侧的唯一标识                  | grab01 |
+| &emsp;\|-template | string | 是   | 填充了input参数的行为模版json string |        |
+示例值
+```json
+{
+	"groups":[
+		{
+			"ide_id":"grab01",
+			"template": "json string"
+		},
+		{
+			"ide_id":"grab02",
+			"template": "json string"
+		}
+	]
+}
+```
 ### 响应参数
 
-
+| 字段名        | 类型     | 说明         | 示例值                         |
+| ---------- | ------ | ---------- | --------------------------- |
+| groupnames | array  | group标识列表  |                             |
+|            | string | group的唯一标识 | T1.G1-20250626T184243-42d50 |
+示例值
+```json
+{
+	"groupnames":[
+		""
+	]
+}
+```
 ## 单个查询group
 ## 批量查询group
