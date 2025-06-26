@@ -12,6 +12,15 @@ dev域名：
 - []()
 ## 调试流程开始<a id="begin"/>
 
+> POST /framework/v1/task
+
+> 请求url格式例子：/framework/v1/task?namespace=Test
+
+### 请求参数
+
+| 字段名 | 类型  |
+| --- | --- |
+|     |     |
 
 ## 运行单个group<a id="run_single"/>
 ## 批量运行group<a id="run_batch"/>
