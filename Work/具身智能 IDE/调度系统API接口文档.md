@@ -173,7 +173,7 @@ dev域名：
 }
 ```
 ## 重复运行group
-> PUT /framework/v1/debug
+> PUT /framework/v1/debug/group
 
 > 请求url格式例子：/framework/v1/debug?taskname=T1-20250626T184243-42d50&namespace=test&groupname=T1.G1-20250626T184243-42d50
 ### query
@@ -282,6 +282,7 @@ dev域名：
 }
 ```
 ## 批量运行group
+> 
 ### 请求参数
 #### query
 
@@ -338,5 +339,6 @@ dev域名：
 - 使用原始的查询接口，后端处理
 方案1
 ## 单个查询group
+
 
 ## 批量查询group
