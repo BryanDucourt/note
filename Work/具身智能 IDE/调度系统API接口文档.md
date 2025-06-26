@@ -414,8 +414,9 @@ dev域名：
 | taskname  | string | 是   | group所属task的唯一标识 | T1-20250626T104243-42d50 |
 | namespace | string | 是   | namespace        | Test                     |
 #### body
-| 字段名                 | 类型     | 必填  | 说明         | 示例值 |
-| ------------------- | ------ | --- | ---------- | --- |
-| groups              | array  | 是   | 待查询group列表 |     |
-| &emsp;\|--groupname | string | 是   | group唯一标识  |     |
+| 字段名                 | 类型     | 必填  | 说明         | 示例值                        |
+| ------------------- | ------ | --- | ---------- | -------------------------- |
+| groups              | array  | 是   | 待查询group列表 |                            |
+| &emsp;\|--groupname | string | 是   | group唯一标识  | T1G1-20250626T104243-42d50 |
+| &emsp;\|--ide_id    | string | 是   | ide唯一标识    | grab01                     |
 ### 响应参数
