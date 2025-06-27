@@ -3,4 +3,4 @@ reset
 
 开始调试的时候创建task
 
-先 kill 发送event 然后 delete 重置
+先 kill 发送event 然后 delete 重置 715只提供重置当前接口，依赖关系待定
