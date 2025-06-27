@@ -364,28 +364,28 @@ dev域名：
 | ide_id    | string | 是   | ide唯一标识    | grab01                      |
 
 ### 响应参数
-| 字段名                       | 类型     | 说明                 | 示例值                            |
-| ------------------------- | ------ | ------------------ | ------------------------------ |
-| groupname                 | string | group的唯一标识         | T1.G1-20250626T104243-42d50    |
-| namespace                 | string | namespace          | Test                           |
-| belong                    | string | 父节点唯一标识            | T1-20250626T104243-42d50       |
-| status                    | object | group状态信息          |                                |
-| &emsp;\|--start           | string | 开始执行时间             | 2025-06-26T15:16:38.545Z       |
-| &emsp;\|--creat           | string | 创建时间               | 2025-06-26T15:16:38.545Z       |
-| &emsp;\|--finish          | string | 结束时间               | 2025-06-26T15:16:38.545Z       |
-| &emsp;\|--last_time       | string | 上次查询时间             | 2025-06-26T15:16:38.545Z       |
-| &emsp;\|--phase           | string | 当前状态               | Running                        |
-| actions                   | array  | 该group下的所有action信息 |                                |
-| &emsp;\|--actionname      | string | action唯一标识         | T1.G1.A1-20250626T104243-42d50 |
-|                           |        |                    |                                |
-| &emsp;\|--namespace       | string | namespace          | Test                           |
-| &emsp;\|--belong          | string | 父节点唯一标识            | T1.G1-20250626T104243-42d50    |
-| &emsp;\|--status          | object | action状态信息         |                                |
-| &emsp;&emsp;\|--start     | string | 开始执行时间             | 2025-06-26T15:16:38.545Z       |
-| &emsp;&emsp;\|--creat     | string | 创建时间               | 2025-06-26T15:16:38.545Z       |
-| &emsp;&emsp;\|--finish    | string | 结束时间               | 2025-06-26T15:16:38.545Z       |
-| &emsp;&emsp;\|--last_time | string | 上次查询时间             | 2025-06-26T15:16:38.545Z       |
-| &emsp;&emsp;\|--phase     | string | 当前状态               | Running                        |
+| 字段名                       | 类型     | 说明                   | 示例值                            |
+| ------------------------- | ------ | -------------------- | ------------------------------ |
+| groupname                 | string | group的唯一标识           | T1.G1-20250626T104243-42d50    |
+| namespace                 | string | namespace            | Test                           |
+| belong                    | string | 父节点唯一标识              | T1-20250626T104243-42d50       |
+| status                    | object | group状态信息            |                                |
+| &emsp;\|--start           | string | 开始执行时间               | 2025-06-26T15:16:38.545Z       |
+| &emsp;\|--creat           | string | 创建时间                 | 2025-06-26T15:16:38.545Z       |
+| &emsp;\|--finish          | string | 结束时间                 | 2025-06-26T15:16:38.545Z       |
+| &emsp;\|--last_time       | string | 上次查询时间               | 2025-06-26T15:16:38.545Z       |
+| &emsp;\|--phase           | string | 当前状态                 | Running                        |
+| actions                   | array  | 该group下的所有action信息   |                                |
+| &emsp;\|--actionname      | string | action唯一标识           | T1.G1.A1-20250626T104243-42d50 |
+| &emsp;\|--ori_name        | string | action在group模板中的name | A1                             |
+| &emsp;\|--namespace       | string | namespace            | Test                           |
+| &emsp;\|--belong          | string | 父节点唯一标识              | T1.G1-20250626T104243-42d50    |
+| &emsp;\|--status          | object | action状态信息           |                                |
+| &emsp;&emsp;\|--start     | string | 开始执行时间               | 2025-06-26T15:16:38.545Z       |
+| &emsp;&emsp;\|--creat     | string | 创建时间                 | 2025-06-26T15:16:38.545Z       |
+| &emsp;&emsp;\|--finish    | string | 结束时间                 | 2025-06-26T15:16:38.545Z       |
+| &emsp;&emsp;\|--last_time | string | 上次查询时间               | 2025-06-26T15:16:38.545Z       |
+| &emsp;&emsp;\|--phase     | string | 当前状态                 | Running                        |
 
 示例值
 ```json
@@ -403,6 +403,7 @@ dev域名：
 	"actions": [
 		{
 			"actionname": "T1.G1.A1-20250626T104243-42d50",
+			"ori_name": "A1",
 			"namespace": "Test",
 			"belong": "T1.G1-20250626T104243-42d50",
 			"status": {
@@ -450,6 +451,7 @@ dev域名：
 			"actions": [
 				{
 					"actionname": "T1.G1.A1-20250626T104243-42d50",
+					"ori_name": "A1",
 					"namespace": "Test",
 					"belong": "T1.G1-20250626T104243-42d50",
 					"status": {
