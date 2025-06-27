@@ -349,12 +349,7 @@ dev域名：
 }
 ```
 # 查询类接口
-两种方案
-- 方案1：使用原始的查询接口，后端schema，分别查询group及其action的状态信息
-	- 单个查询group
-	- 批量查询group
-	- 批量查询action
-- 方案2： 封装专门的查询接口，一次性返回group及其所有action的状态信息，在接口处做schema
+
 ## 单个查询group
 > GET /framework/v1/debug/group
 
