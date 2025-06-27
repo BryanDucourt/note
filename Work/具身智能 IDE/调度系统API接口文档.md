@@ -377,6 +377,7 @@ dev域名：
 | &emsp;\|--phase           | string | 当前状态               | Running                        |
 | actions                   | array  | 该group下的所有action信息 |                                |
 | &emsp;\|--actionname      | string | action唯一标识         | T1.G1.A1-20250626T104243-42d50 |
+|                           |        |                    |                                |
 | &emsp;\|--namespace       | string | namespace          | Test                           |
 | &emsp;\|--belong          | string | 父节点唯一标识            | T1.G1-20250626T104243-42d50    |
 | &emsp;\|--status          | object | action状态信息         |                                |
