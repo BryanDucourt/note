@@ -337,6 +337,7 @@ dev域名：
 示例值
 ```json
 {
+	"taskname": "sdfasdfa",
 	"groupnames":[
 		{
 			"ide_id":"grab01",
