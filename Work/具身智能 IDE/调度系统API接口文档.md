@@ -69,7 +69,7 @@ dev域名：
 ## 运行group
 > POST /framework/v1/debug/group
 
-> 请求url格式例子：/framework/v1/debug?taskname=T1-20250626T104243-42d50&namespace=test&ide_id=grab01
+> 请求url格式例子：/framework/v1/debug?taskName=T1-20250626T104243-42d50&namespace=test
 ### 请求参数
 #### query
 
@@ -181,7 +181,7 @@ dev域名：
 ## 重复运行group
 > PUT /framework/v1/debug/group
 
-> 请求url格式例子：/framework/v1/debug/group?taskname=T1-20250626T104243-42d50&namespace=test&groupname=T1.G1-20250626T104243-42d50
+> 请求url格式例子：/framework/v1/debug/group?taskName=T1-20250626T104243-42d50&namespace=test&groupName=T1.G1-20250626T104243-42d50
 ### query
 
 | 字段名       | 类型     | 必填  | 说明         | 示例值                         |
@@ -294,7 +294,7 @@ dev域名：
 ## 批量运行group
 > POST /framework/v1/debug/groups
 
-> 请求url格式例子：/framework/v1/debug/groups?taskname=T1-20250626T104243-42d50&namespace=test
+> 请求url格式例子：/framework/v1/debug/groups?taskName=T1-20250626T104243-42d50&namespace=test
 ### 请求参数
 #### query
 
@@ -356,7 +356,7 @@ dev域名：
 ## 单个查询group
 > GET /framework/v1/debug/group
 
-> 请求url格式例子：/framework/v1/debug/group?groupname=T1.G2-20250626T104243-42d50&namespace=Test&ide_id=grab01
+> 请求url格式例子：/framework/v1/debug/group?groupName=T1.G2-20250626T104243-42d50&namespace=Test&ideId=grab01
 
 ### 请求参数
 #### query
@@ -422,7 +422,7 @@ dev域名：
 ## 批量查询group
 > GET /framework/v1/debug/groups
 
-> 请求url格式例子：/framework/v1/debug/groups?taskname=T1-20250626T104243-42d50&namespace=Test
+> 请求url格式例子：/framework/v1/debug/groups?taskName=T1-20250626T104243-42d50&namespace=Test
 ### 请求参数
 #### query
 | 字段名       | 类型     | 必填  | 说明               | 示例值                      |
