@@ -300,7 +300,7 @@ dev域名：
 
 | 字段名       | 类型     | 必填  | 说明        | 示例值                      |
 | --------- | ------ | --- | --------- | ------------------------ |
-| taskname  | string | 是   | task的唯一标识 | T1-20250626T104243-42d50 |
+| taskName  | string | 是   | task的唯一标识 | T1-20250626T104243-42d50 |
 | namespace | string | 是   | namespace | test                     |
 
 
@@ -308,7 +308,7 @@ dev域名：
 | 字段名               | 类型     | 必填  | 说明                         | 示例值    |
 | ----------------- | ------ | --- | -------------------------- | ------ |
 | groups            | array  | 是   | group列表                    |        |
-| &emsp;\|-ide_id   | string | 是   | ide侧的唯一标识                  | grab01 |
+| &emsp;\|-ideId    | string | 是   | ide侧的唯一标识                  | grab01 |
 | &emsp;\|-template | string | 是   | 填充了input参数的行为模版json string |        |
 
 示例值
@@ -316,7 +316,7 @@ dev域名：
 {
 	"groups":[
 		{
-			"ide_id":"grab01",
+			"ideId":"grab01",
 			"template": "json string"
 		},
 		{
@@ -330,23 +330,23 @@ dev域名：
 
 | 字段名                 | 类型     | 说明         | 示例值                         |
 | ------------------- | ------ | ---------- | --------------------------- |
-| taskname            | string | 新task的唯一标识 | T1-20250626T104243-42d50    |
-| groupnames          | array  | group标识列表  |                             |
-| &emsp;\|--ide_id    | string | ide唯一标识    | grab01                      |
-| &emsp;\|--groupname | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
+| taskName            | string | 新task的唯一标识 | T1-20250626T104243-42d50    |
+| groupNames          | array  | group标识列表  |                             |
+| &emsp;\|--ideId     | string | ide唯一标识    | grab01                      |
+| &emsp;\|--groupName | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
 
 示例值
 ```json
 {
-	"taskname": "T1-20250626T104243-42d50",
-	"groupnames":[
+	"taskName": "T1-20250626T104243-42d50",
+	"groupNames":[
 		{
-			"ide_id":"grab01",
-			"groupname":"T1.G1-20250626T104243-42d50"
+			"ideId":"grab01",
+			"groupName":"T1.G1-20250626T104243-42d50"
 		},
 		{
-			"ide_id":"grab02",
-			"groupname":"T1.G2-20250626T104243-42d50"
+			"ideId":"grab02",
+			"groupName":"T1.G2-20250626T104243-42d50"
 		}
 	]
 }
@@ -362,62 +362,61 @@ dev域名：
 #### query
 | 字段名       | 类型     | 必填  | 说明         | 示例值                         |
 | --------- | ------ | --- | ---------- | --------------------------- |
-| groupname | string | 是   | group的唯一标识 | T1.G1-20250626T104243-42d50 |
+| groupName | string | 是   | group的唯一标识 | T1.G1-20250626T104243-42d50 |
 | namespace | string | 是   | namespace  | Test                        |
-| ide_id    | string | 是   | ide唯一标识    | grab01                      |
+| ideId     | string | 是   | ide唯一标识    | grab01                      |
 
 ### 响应参数
-| 字段名                       | 类型     | 说明                   | 示例值                            |
-| ------------------------- | ------ | -------------------- | ------------------------------ |
-| groupname                 | string | group的唯一标识           | T1.G1-20250626T104243-42d50    |
-| namespace                 | string | namespace            | Test                           |
-| belong                    | string | 父节点唯一标识              | T1-20250626T104243-42d50       |
-| status                    | object | group状态信息            |                                |
-| &emsp;\|--start           | string | 开始执行时间               | 2025-06-26T15:16:38.545Z       |
-| &emsp;\|--creat           | string | 创建时间                 | 2025-06-26T15:16:38.545Z       |
-| &emsp;\|--finish          | string | 结束时间                 | 2025-06-26T15:16:38.545Z       |
-| &emsp;\|--last_time       | string | 上次查询时间               | 2025-06-26T15:16:38.545Z       |
-| &emsp;\|--phase           | string | 当前状态                 | Running                        |
-| actions                   | array  | 该group下的所有action信息   |                                |
-| &emsp;\|--actionname      | string | action唯一标识           | T1.G1.A1-20250626T104243-42d50 |
-| &emsp;\|--ori_name        | string | action在group模板中的name | A1                             |
-| &emsp;\|--namespace       | string | namespace            | Test                           |
-| &emsp;\|--belong          | string | 父节点唯一标识              | T1.G1-20250626T104243-42d50    |
-| &emsp;\|--status          | object | action状态信息           |                                |
-| &emsp;&emsp;\|--start     | string | 开始执行时间               | 2025-06-26T15:16:38.545Z       |
-| &emsp;&emsp;\|--creat     | string | 创建时间                 | 2025-06-26T15:16:38.545Z       |
-| &emsp;&emsp;\|--finish    | string | 结束时间                 | 2025-06-26T15:16:38.545Z       |
-| &emsp;&emsp;\|--last_time | string | 上次查询时间               | 2025-06-26T15:16:38.545Z       |
-| &emsp;&emsp;\|--phase     | string | 当前状态                 | Running                        |
+| 字段名                      | 类型     | 说明                   | 示例值                            |
+| ------------------------ | ------ | -------------------- | ------------------------------ |
+| groupName                | string | group的唯一标识           | T1.G1-20250626T104243-42d50    |
+| namespace                | string | namespace            | Test                           |
+| belong                   | string | 父节点唯一标识              | T1-20250626T104243-42d50       |
+| status                   | object | group状态信息            |                                |
+| &emsp;\|--start          | string | 开始执行时间               | 2025-06-26T15:16:38.545Z       |
+| &emsp;\|--creat          | string | 创建时间                 | 2025-06-26T15:16:38.545Z       |
+| &emsp;\|--finish         | string | 结束时间                 | 2025-06-26T15:16:38.545Z       |
+| &emsp;\|--lastTime       | string | 上次查询时间               | 2025-06-26T15:16:38.545Z       |
+| &emsp;\|--phase          | string | 当前状态                 | Running                        |
+| actions                  | array  | 该group下的所有action信息   |                                |
+| &emsp;\|--actionName     | string | action唯一标识           | T1.G1.A1-20250626T104243-42d50 |
+| &emsp;\|--oriName        | string | action在group模板中的name | A1                             |
+| &emsp;\|--namespace      | string | namespace            | Test                           |
+| &emsp;\|--belong         | string | 父节点唯一标识              | T1.G1-20250626T104243-42d50    |
+| &emsp;\|--status         | object | action状态信息           |                                |
+| &emsp;&emsp;\|--start    | string | 开始执行时间               | 2025-06-26T15:16:38.545Z       |
+| &emsp;&emsp;\|--creat    | string | 创建时间                 | 2025-06-26T15:16:38.545Z       |
+| &emsp;&emsp;\|--finish   | string | 结束时间                 | 2025-06-26T15:16:38.545Z       |
+| &emsp;&emsp;\|--lastTime | string | 上次查询时间               | 2025-06-26T15:16:38.545Z       |
+| &emsp;&emsp;\|--phase    | string | 当前状态                 | Running                        |
 
 示例值
 ```json
-{
-	"groupname":"T1.G1-20250626T104243-42d50",
-	"namespace":"Test",
-	"belong":"T1-20250626T104243-42d50",
-	"status":{
-		"start":"2025-06-26T15:16:38.545Z",
-		"create": "2025-06-26T15:16:38.545Z",
-		"finish": "z2025-06-26T15:16:38.545Z",
-		"last_time": "2025-06-26T15:16:38.545Z",
-		"phase": "Running"
-	},
-	"actions": [
-		{
-			"actionname": "T1.G1.A1-20250626T104243-42d50",
-			"ori_name": "A1",
-			"namespace": "Test",
-			"belong": "T1.G1-20250626T104243-42d50",
-			"status": {
-				"start":"2025-06-26T15:16:38.545Z",
-				"create": "2025-06-26T15:16:38.545Z",
-				"finish": "z2025-06-26T15:16:38.545Z",
-				"last_time": "2025-06-26T15:16:38.545Z",
-				"phase": "Running"
-			}
-		}
-	]
+{ 
+	"groupName": "T1.test1-20250704T181004-4b685", 
+	"namespace": "test", 
+	"belong": "T1-20250704T181004-4b685", 
+	"status": { 
+		"create": "2025-07-04T18:10:04.561869801+08:00",
+		"start": "2025-07-04T18:10:05.566347156+08:00", 
+		"finish": "2025-07-04T18:10:05.581856314+08:00",
+		"lastTime": "2025-07-04T18:10:05.581856375+08:00",
+		"phase": "Succeeded" 
+		}, 
+	"actions": [ { 
+		"actionName": "T1.test1.A1-20250704T181004-4b685", 
+		"namespace": "test",
+		"belong": "T1.test1-20250704T181004-4b685", 
+		"oriName": "A1",
+		"status": { 
+			"create": "2025-07-04T18:10:04.561871354+08:00",
+			"start": "2025-07-04T18:10:05.566347156+08:00",
+			"finish": "2025-07-04T18:10:05.581856314+08:00", 
+			"lastTime": "2025-07-04T18:10:05.581856375+08:00",
+			"phase": "Succeeded" 
+			} 
+		} 
+	] 
 }
 ```
 ## 批量查询group
