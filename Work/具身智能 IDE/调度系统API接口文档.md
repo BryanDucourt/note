@@ -330,6 +330,7 @@ dev域名：
 
 | 字段名                 | 类型     | 说明         | 示例值                         |
 | ------------------- | ------ | ---------- | --------------------------- |
+| taskname            | string | 新task的唯一标识 | T1-20250626T104243-42d50    |
 | groupnames          | array  | group标识列表  |                             |
 | &emsp;\|--ide_id    | string | ide唯一标识    | grab01                      |
 | &emsp;\|--groupname | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
@@ -337,7 +338,7 @@ dev域名：
 示例值
 ```json
 {
-	"taskname": "sdfasdfa",
+	"taskname": "T1-20250626T104243-42d50",
 	"groupnames":[
 		{
 			"ide_id":"grab01",
@@ -431,9 +432,10 @@ dev域名：
 | namespace | string | 是   | namespace        | Test                     |
 
 ### 响应参数
-| 字段名    | 类型    | 说明                    | 示例值 |
-| ------ | ----- | --------------------- | --- |
-| groups | array | group信息列表，成员结构与单个查询相同 |     |
+| 字段名      | 类型     | 说明                    | 示例值                      |
+| -------- | ------ | --------------------- | ------------------------ |
+| groups   | array  | group信息列表，成员结构与单个查询相同 |                          |
+
 
 示例值
 ```json
