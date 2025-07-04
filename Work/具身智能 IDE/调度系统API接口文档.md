@@ -75,19 +75,19 @@ dev域名：
 
 | 字段名       | 类型     | 必填  | 说明        | 示例值                      |
 | --------- | ------ | --- | --------- | ------------------------ |
-| taskname  | string | 是   | task的唯一标识 | T1-20250626T104243-42d50 |
+| taskName  | string | 是   | task的唯一标识 | T1-20250626T104243-42d50 |
 | namespace | string | 是   | namespace | test                     |
 
 #### body
 | 字段名      | 类型     | 必填  | 说明                         | 示例值    |
 | -------- | ------ | --- | -------------------------- | ------ |
-| ide_id   | string | 是   | ide侧的唯一标识                  | grab01 |
+| ideId    | string | 是   | ide侧的唯一标识                  | grab01 |
 | template | string | 是   | 填充了input参数的行为模版json string |        |
 
 示例值
 ```json
 {
-	"ide_id":"grab01",
+	"ideId":"grab01",
 	"template":‘
 	{  
 	  "name": "move",  
@@ -170,7 +170,7 @@ dev域名：
 ### 响应参数
 | 字段名       | 类型     | 说明         | 示例值                         |
 | --------- | ------ | ---------- | --------------------------- |
-| groupname | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
+| groupName | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
 
 示例值
 ```json
@@ -186,20 +186,20 @@ dev域名：
 
 | 字段名       | 类型     | 必填  | 说明         | 示例值                         |
 | --------- | ------ | --- | ---------- | --------------------------- |
-| taskname  | string | 是   | task的唯一标识  | T1-20250626T104243-42d50    |
+| taskName  | string | 是   | task的唯一标识  | T1-20250626T104243-42d50    |
 | namespace | string | 是   | namespace  | test                        |
-| groupname | string | 是   | group的唯一标识 | T1.G1-20250626T104243-42d50 |
+| groupName | string | 是   | group的唯一标识 | T1.G1-20250626T104243-42d50 |
 
 ### body
 | 字段名      | 类型     | 必填  | 说明                         | 示例值    |
 | -------- | ------ | --- | -------------------------- | ------ |
-| ide_id   | string | 是   | ide侧的唯一标识                  | grab01 |
+| ideId    | string | 是   | ide侧的唯一标识                  | grab01 |
 | template | string | 是   | 填充了input参数的行为模版json string |        |
 
 示例值
 ```json
 {
-	"ide_id":"grab01",
+	"ideId":"grab01",
 	"template":'
 	{  
 	  "name": "move",  
@@ -282,12 +282,12 @@ dev域名：
 ### 响应参数
 | 字段名       | 类型     | 说明         | 示例值                         |
 | --------- | ------ | ---------- | --------------------------- |
-| groupname | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
+| groupName | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
 
 示例值
 ```json
 {
-	"groupname":"T1.G1-20250626T104243-42d50"
+	"groupName":"T1.G1-20250626T104243-42d50"
 }
 ```
 
