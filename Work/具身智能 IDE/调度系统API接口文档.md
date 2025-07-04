@@ -13,9 +13,9 @@ dev域名：
 # 生成类接口
 ## 调试流程开始
 
-> POST /framework/v1/task
+> POST /framework/v1/debug/task
 
-> 请求url格式例子：/framework/v1/task?namespace=Test
+> 请求url格式例子：/framework/v1/debug/task?namespace=Test
 
 ### 请求参数
 #### query
