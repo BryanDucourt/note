@@ -39,7 +39,7 @@ dev域名：
 示例值
 ```json
 {
-	"task":"{\"kind\":\"Task\",\"apiVersion\":\"resouces/v1\",\"name\":\"T1\",\"namespace\":\"test\",\"spec\":{\"name\":\"T1\",\"desc\":{\"docs\": \"演示流程\"}}}"
+	"task":"{\"kind\":\"Task\",\"apiVersion\":\"resouces\/v1\",\"name\":\"T1\",\"namespace\":\"test\",\"spec\":{\"name\":\"T1\",\"desc\":{\"docs\": \"演示流程\"}}}"
 }
 ```
 
