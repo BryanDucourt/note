@@ -10,6 +10,7 @@ dev域名：
 - [重复运行group](##重复运行group)
 - [单个查询](##单个查询group)
 - [批量查询](##批量查询group)
+- [查询device](#批量查询device)
 # 生成类接口
 ## 调试流程开始
 
@@ -358,57 +359,42 @@ dev域名：
 		"status": "Idle",
 		"abilities": [
 			{
-			"name": "Move",
-			"status": "Running",
-			"services": [
-				{
-				"name": "SimMove",
-				"ip": "172.150.0.26",
-				"port": "55689",
-				"model": ""
-				}
-			]
+				"name": "Move",
+				"status": "Running",
+				"services": [
+					{
+					"name": "SimMove",
+					"ip": "172.150.0.26",
+					"port": "55689",
+					"model": ""
+					}
+				]
 			},
-{
-"name": "PickPlace",
-"status": "Running",
-"services": [
-{
-"name": "SimPick",
-"ip": "172.150.0.26",
-"port": "41669",
-"model": ""
-},
-{
-"name": "SimPickAndPlace",
-
-"ip": "172.150.0.26",
-
-"port": "41669",
-
-"model": ""
-
-},
-
-{
-
-"name": "SimPlace",
-
-"ip": "172.150.0.26",
-
-"port": "41669",
-
-"model": ""
-
-}
-
-]
-
-}
-
-]
-
-}
-
+			{
+				"name": "PickPlace",
+				"status": "Running",
+				"services": [
+					{
+					"name": "SimPick",
+					"ip": "172.150.0.26",
+					"port": "41669",
+					"model": ""
+					},
+					{
+					"name": "SimPickAndPlace",
+					"ip": "172.150.0.26",
+					"port": "41669",
+					"model": ""
+					},
+					{
+					"name": "SimPlace",
+					"ip": "172.150.0.26",
+					"port": "41669",
+					"model": ""
+					}
+				]
+			}
+		]
+	}
 ]
 ```
