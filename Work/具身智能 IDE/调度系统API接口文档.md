@@ -143,6 +143,8 @@ dev域名：
 > POST /framework/v1/debug/groups
 
 > 请求url格式例子：/framework/v1/debug/groups?taskName=T1-20250626T104243-42d50&namespace=test
+
+每次运行会停止并删除指定的task，根据传入的模版信息创建新的task
 ### 请求参数
 #### query
 
@@ -318,8 +320,4 @@ dev域名：
 }
 
 ```
-
-
-0706
-create接口 防抖设计 在后端还是调度接口实现
 
