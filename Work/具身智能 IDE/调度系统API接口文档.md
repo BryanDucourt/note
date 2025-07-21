@@ -334,8 +334,16 @@ dev域名：
 ### 响应参数
 响应参数为一个array，array中元素结构如下
 
-| 字段名    | 类型     | 说明             | 示例值       |
-| ------ | ------ | -------------- | --------- |
-| name   | string | device名称       | PR2_ROBOT |
-| status | string | devicezhuang a |           |
+| 字段名                   | 类型     | 说明        | 示例值          |
+| --------------------- | ------ | --------- | ------------ |
+| name                  | string | 设备名称      | PR2_ROBOT    |
+| status                | string | 设备状态      | idle         |
+| abilities             | array  | 设备包含的能力列表 |              |
+| &emsp;\|--name        | string | 能力名       | Move         |
+| &emsp;\|--status      | string | 能力状态      | Running      |
+| &emsp;\|--services    | array  | 能力包含的服务   |              |
+| &emsp;&emsp;\|--name  | string | 服务名       | SimMove      |
+| &emsp;&emsp;\|--ip    | string | ip地址      | 172.150.0.26 |
+| &emsp;&emsp;\|--port  | string | 端口        | 55689        |
+| &emsp;&emsp;\|--model | string | 模型        |              |
 
