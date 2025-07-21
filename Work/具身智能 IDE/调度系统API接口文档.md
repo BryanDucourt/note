@@ -281,9 +281,9 @@ dev域名：
 | namespace | string | 是   | namespace        | Test                     |
 
 ### 响应参数
-| 字段名      | 类型     | 说明                    | 示例值                      |
-| -------- | ------ | --------------------- | ------------------------ |
-| groups   | array  | group信息列表，成员结构与单个查询相同 |                          |
+| 字段名    | 类型    | 说明                    | 示例值 |     |
+| ------ | ----- | --------------------- | --- | --- |
+| groups | array | group信息列表，成员结构与单个查询相同 |     |     |
 
 
 示例值
@@ -320,4 +320,22 @@ dev域名：
 }
 
 ```
+
+## 批量查询device
+> GET /framework/v1/debug/device
+
+> 请求url格式例子：/framework/v1/debug/device?namespace=Test
+
+### 请求参数
+#### query
+| 字段名       | 类型     | 必填  | 说明               | 示例值                      |
+| --------- | ------ | --- | ---------------- | ------------------------ |
+| namespace | string | 是   | namespace        | Test                     |
+### 响应参数
+响应参数为一个array，array中元素结构如下
+
+| 字段名    | 类型     | 说明             | 示例值       |
+| ------ | ------ | -------------- | --------- |
+| name   | string | device名称       | PR2_ROBOT |
+| status | string | devicezhuang a |           |
 
