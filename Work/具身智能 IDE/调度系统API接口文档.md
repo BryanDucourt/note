@@ -4,12 +4,12 @@
 测试域名：
 dev域名：
 # 接口列表
-- [调试流程开始](##调试流程开始)
-- [运行单个group](##运行单个group)
-- [批量运行group](##批量运行group)
-- [重复运行group](##重复运行group)
-- [单个查询](##单个查询group)
-- [批量查询](##批量查询group)
+- [调试流程开始](#调试流程开始)
+- [运行单个group](#运行group)
+- [批量运行group](#批量运行group)
+- [重置group](#重置group)
+- [单个查询](#单个查询group)
+- [批量查询](#批量查询group)
 - [查询device](#批量查询device)
 # 生成类接口
 ## 调试流程开始
@@ -102,7 +102,7 @@ dev域名：
 	"groupName":"T1.G1-20250626T104243-42d50"
 }
 ```
-## 重复运行group
+## 重置group
 > PUT /framework/v1/debug/group
 
 > 请求url格式例子：/framework/v1/debug/group?taskName=T1-20250626T104243-42d50&namespace=test&groupName=T1.G1-20250626T104243-42d50
@@ -114,32 +114,7 @@ dev域名：
 | namespace | string | 是   | namespace  | test                        |
 | groupName | string | 是   | group的唯一标识 | T1.G1-20250626T104243-42d50 |
 
-### body
-| 字段名      | 类型     | 必填  | 说明                         | 示例值    |
-| -------- | ------ | --- | -------------------------- | ------ |
-| ideId    | string | 是   | ide侧的唯一标识                  | grab01 |
-| template | string | 是   | 填充了input参数的行为模版json string |        |
-
-示例值
-```json
-{
-	"ideId":"grab01",
-	"template":"{\"name\":\"test1\",\"desc\":{\"label\":{\"type\":\"1\",\"name_zh\":\"移动\"},\"docs\":\"移动动作，通常用于将机器人从一个位置移动到另一个位置。\"},\"input\":{\"conditions\":[],\"parents\":[],\"devices\":[{\"name\":\"Robot1\",\"expected_properties\":{\"name\":{\"value\":\"测试机器人1\"},\"strategy\":{\"value\":\"nominate\"}},\"abilities\":[\"Move\"]}],\"parameters\":[{\"name\":\"target_position\",\"type\":\"compose\",\"value\":\"test\",\"from\":\"move_to\"},{\"name\":\"turn_angle\",\"type\":\"double\",\"value\":\"0\",\"from\":\"move_to\"}]},\"actions\":[{\"name\":\"move_to\",\"input\":{\"conditions\":[],\"parents\":[],\"devices\":[{\"name\":\"Robot1\",\"expected_properties\":{\"name\":{\"value\":\"device1\"},\"strategy\":{\"value\":\"nominate\"}},\"abilities\":[\"Move\"]}],\"parameters\":[{\"name\":\"goal_pos\",\"type\":\"compose\",\"value\":\"1.1,6.3\",\"from\":\"move_to\"},{\"name\":\"goal_angle\",\"type\":\"double\",\"value\":\"90.0\",\"from\":\"move_to\"}]},\"serialized\":\"{\\\"name\\\":\\\"A1\\\",\\\"desc\\\":{\\\"docs\\\":\\\"抓取物品\\\"},\\\"runtimes\\\":[{\\\"name\\\":\\\"R0\\\",\\\"type\\\":\\\"command\\\",\\\"command\\\":[\\\"python\\\"],\\\"args\\\":[\\\"/home/public/workspace/debug/{{.target_position}}.py\\\"]}]}\",\"desc\":{\"docs\":\"移动action，输入参数包括目标位置和移动持续时间。\"}}]}"
-}
-```
-
-### 响应参数
-| 字段名       | 类型     | 说明         | 示例值                         |
-| --------- | ------ | ---------- | --------------------------- |
-| groupName | string | group的唯一标识 | T1.G1-20250626T104243-42d50 |
-
-示例值
-```json
-{
-	"groupName":"T1.G1-20250626T104243-42d50"
-}
-```
-
+无响应字段
 ## 批量运行group
 > POST /framework/v1/debug/groups
 
