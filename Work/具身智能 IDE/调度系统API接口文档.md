@@ -322,16 +322,19 @@ dev域名：
 ```
 
 ## 批量查询device
+
 > GET /framework/v1/debug/device
 
 > 请求url格式例子：/framework/v1/debug/device?namespace=Test
 
 ### 请求参数
 #### query
+
 | 字段名       | 类型     | 必填  | 说明               | 示例值                      |
 | --------- | ------ | --- | ---------------- | ------------------------ |
 | namespace | string | 是   | namespace        | Test                     |
 ### 响应参数
+
 响应参数为一个array，array中元素结构如下
 
 | 字段名                   | 类型     | 说明        | 示例值          |
@@ -347,3 +350,65 @@ dev域名：
 | &emsp;&emsp;\|--port  | string | 端口        | 55689        |
 | &emsp;&emsp;\|--model | string | 模型        |              |
 
+示例值
+```json
+[
+	{
+		"name": "PR2_ROBOT",
+		"status": "Idle",
+		"abilities": [
+			{
+			"name": "Move",
+			"status": "Running",
+			"services": [
+				{
+				"name": "SimMove",
+				"ip": "172.150.0.26",
+				"port": "55689",
+				"model": ""
+				}
+			]
+			},
+{
+"name": "PickPlace",
+"status": "Running",
+"services": [
+{
+"name": "SimPick",
+"ip": "172.150.0.26",
+"port": "41669",
+"model": ""
+},
+{
+"name": "SimPickAndPlace",
+
+"ip": "172.150.0.26",
+
+"port": "41669",
+
+"model": ""
+
+},
+
+{
+
+"name": "SimPlace",
+
+"ip": "172.150.0.26",
+
+"port": "41669",
+
+"model": ""
+
+}
+
+]
+
+}
+
+]
+
+}
+
+]
+```
