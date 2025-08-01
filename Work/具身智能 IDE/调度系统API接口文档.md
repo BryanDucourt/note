@@ -105,7 +105,7 @@ dev域名：
 ## 重置group
 > PUT /framework/v1/debug/group
 
-> 请求url格式例子：/framework/v1/debug/group?taskName=T1-20250626T104243-42d50&namespace=test&groupName=T1.G1-20250626T104243-42d50
+> 请求url格式例子：/framework/v1/debug/group?taskName=T1-20250626T104243-42d50&namespace=test
 ### query
 
 | 字段名       | 类型     | 必填  | 说明         | 示例值                         |
