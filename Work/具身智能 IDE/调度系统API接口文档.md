@@ -8,6 +8,8 @@ dev域名：
 - [运行单个group](#运行group)
 - [批量运行group](#批量运行group)
 - [重置group](#重置group)
+- [停止能力](#停止能力)
+- [启动能力](#启动能力)
 - [单个查询](#单个查询group)
 - [批量查询](#批量查询group)
 - [查询device](#批量查询device)
@@ -195,7 +197,62 @@ dev域名：
 	]
 }
 ```
-# 查询类接口
+## 停止能力
+> PATCH /framework/v1/debug/device
+
+> 请求url格式例子：/framework/v1/debug/device?namespace=test
+
+### 请求参数
+#### query
+
+| 字段名       | 类型     | 必填  | 说明         | 示例值                         |
+| --------- | ------ | --- | ---------- | --------------------------- |
+| namespace | string | 是   | namespace  | Test                        |
+#### body
+
+| 字段名     | 类型     | 必填  | 说明         | 示例值         |
+| ------- | ------ | --- | ---------- | ----------- |
+| devices | array  | 是   |            |             |
+|         | string | 是   | devicename | PR2_ROBOT_1 |
+
+示例值
+
+```json
+{
+		"devices":[
+			"PR2_ROBOT_1"
+		]
+}
+```
+
+## 启动能力
+> PUT /framework/v1/debug/device
+
+> 请求url格式例子：/framework/v1/debug/device?namespace=test
+
+### 请求参数
+#### query
+
+| 字段名       | 类型     | 必填  | 说明         | 示例值                         |
+| --------- | ------ | --- | ---------- | --------------------------- |
+| namespace | string | 是   | namespace  | Test                        |
+#### body
+
+| 字段名     | 类型     | 必填  | 说明         | 示例值         |
+| ------- | ------ | --- | ---------- | ----------- |
+| devices | array  | 是   |            |             |
+|         | string | 是   | devicename | PR2_ROBOT_1 |
+
+示例值
+
+```json
+{
+		"devices":[
+			"PR2_ROBOT_1"
+		]
+}
+```
+
 
 ## 单个查询group
 > GET /framework/v1/debug/group
