@@ -7,4 +7,4 @@
 - 熟悉HTML5/CSS/JS/TS等Web开发基础技术及前端工程化工具（Webpack、Vite）
 - 有框架优化、性能优化等项目经验
 - 良好的问题解决能力，能够独立分析和解决开发过程中的技术问题
-- 有Web 
+- 有Web 编辑器（Monaco-editor、
