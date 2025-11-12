@@ -7,4 +7,4 @@
 - 熟悉Web Socket/Web worker等技术
 - 良好的问题解决能力，能与团队协作分析和解决开发过程中的技术问题
 加分项
-- 对BrowserFS
+- 对BrowserFS、XTerm.js、WASM、IndexedDB
