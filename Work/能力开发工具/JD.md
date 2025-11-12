@@ -8,4 +8,4 @@
 - 良好的问题解决能力，能与团队协作分析和解决开发过程中的技术问题
 加分项
 - 有BrowserFS、XTerm.js、WASM、IndexedDB等技术使用经验
-- 有Monaco-editor、Code-server、Theia
+- 有Monaco-editor、Code-server、Theia等二开经验
