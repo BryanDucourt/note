@@ -11,10 +11,24 @@
             "id": "415bd099254ddf7a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Work/能力开发工具/1217.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "1217"
             }
           }
         ]
@@ -149,7 +163,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "d64912c7f2ab0037",
+  "active": "415bd099254ddf7a",
   "lastOpenFiles": [
     "Work/能力开发工具/1217.md"
   ]
