@@ -350,7 +350,7 @@ head results/m2_plan/planned_runs.csv
 
 ---
 
-# **Step 6：执行 M2 baseline paired runs**
+## **Step 6：执行 M2 baseline paired runs**
 
 **执行者：你**
 
@@ -403,7 +403,7 @@ python3 analysis/aggregate_window_features.py \
 
 ---
 
-# **Step 7：执行 M2 非默认策略 paired runs**
+## **Step 7：执行 M2 非默认策略 paired runs**
 
 **执行者：你**
 
@@ -447,7 +447,7 @@ python3 runners/run_m2.py \
 
 ---
 
-# **Step 8：构建完整 M2 dataset**
+## **Step 8：构建完整 M2 dataset**
 
 **执行者：你**
 
@@ -492,7 +492,7 @@ PY
 
 ---
 
-# **Step 9：完善 M2 analysis**
+## **Step 9：完善 M2 analysis**
 
 **执行者：Codex**
 
@@ -562,7 +562,7 @@ M2 验收标准：
 
 ---
 
-# **Step 10：实现 M3 run-level analysis**
+## **Step 10：实现 M3 run-level analysis**
 
 **执行者：Codex**
 
@@ -645,7 +645,7 @@ M3 验收标准：
 
 ---
 
-# **Step 11：实现 M1 wrk parser**
+## **Step 11：实现 M1 wrk parser**
 
 **执行者：Codex**
 
@@ -693,7 +693,7 @@ python3 analysis/parse_wrk_output.py --help
 
 ---
 
-# **Step 12：新增 M1 web latency matrix**
+## **Step 12：新增 M1 web latency matrix**
 
 **执行者：Codex**
 
@@ -729,7 +729,7 @@ Notes:
 
 ---
 
-# **Step 13：执行 M1 web latency runs**
+## **Step 13：执行 M1 web latency runs**
 
 **执行者：你**
 
@@ -805,7 +805,7 @@ python3 analysis/parse_wrk_output.py \
 
 ---
 
-# **Step 14：完善 M1 analysis**
+## **Step 14：完善 M1 analysis**
 
 **执行者：Codex**
 
@@ -866,7 +866,7 @@ M1 验收标准：
 
 ---
 
-# **Step 15：生成最终实验 manifest**
+## **Step 15：生成最终实验 manifest**
 
 **执行者：Codex**
 
@@ -906,7 +906,7 @@ cat artifacts/manifest.json | head
 
 ---
 
-# **Step 16：生成 Motivation 初稿**
+## **Step 16：生成 Motivation 初稿**
 
 **执行者：Codex**
 
@@ -937,9 +937,9 @@ Rules:
 
 ---
 
-# **3. 最终实验矩阵**
+## **3. 最终实验矩阵**
 
-## **M1 矩阵**
+### **M1 矩阵**
 
 |**Scenario**|**Foreground**|**Load**|**Background**|**Objective**|
 |---|---|---|---|---|
@@ -953,7 +953,7 @@ Rules:
 
 ---
 
-## **M2 矩阵**
+### **M2 矩阵**
 
 |**Scenario**|**baseline**|**batch_manual**|**compact affinity**|**spread affinity**|
 |---|---|---|---|---|
@@ -966,7 +966,7 @@ Rules:
 
 ---
 
-## **M3 数据来源**
+### **M3 数据来源**
 
 ```text
 M3 = M2 run-level dataset + M2 oracle policy
@@ -992,9 +992,9 @@ near_best_policy_set
 
 ---
 
-# **4. 最终验收标准**
+## **4. 最终验收标准**
 
-## **M1**
+### **M1**
 
 ```text
 app_p99_us 真实存在；
@@ -1003,7 +1003,7 @@ cpu_util_norm 用于 proxy 分析；
 all-features 比 cpu-util-only 更能解释 p99。
 ```
 
-## **M2**
+### **M2**
 
 ```text
 至少 6 个 PTS scenarios；
@@ -1013,7 +1013,7 @@ oracle_policy.csv 显示不同 workload 的 best policy 不完全相同；
 policy_regret.csv 显示 static policy regret。
 ```
 
-## **M3**
+### **M3**
 
 ```text
 active-window features 被使用；
@@ -1025,7 +1025,7 @@ all-features 优于 cpu_util_only；
 
 ---
 
-# **5. 现在应该继续的具体下一步**
+## **5. 现在应该继续的具体下一步**
 
 你现在最直接执行：
 
@@ -1053,4 +1053,898 @@ Step 15–16：manifest 和 motivation 初稿
 M1：单一 proxy metric 不足以解释 p99
 M2：静态策略没有全局最优
 M3：多层特征能区分场景并支撑策略选择
+```
+# update
+我按当前 GitHub `main` 检查了一遍。当前 `main` 已经不是附件里提到的 `5f4f4bc`，而是：
+
+```text
+a3b31819704dd8762dd50376601bd47a6f966265
+message: adapt m2 pts contention plan
+```
+
+这个提交在 `5f4f4bc` 的基础上新增了 **M2 contention plan**、更新了 `run_m2.py` planner、补充了 baseline paired-run 结果。 
+
+下面先回答两个问题，然后给出按先后顺序排列的完整后续实验计划。
+
+---
+
+## **1. 问题一：没有背景干扰时直接做 Step 7，能否得到显著结果？**
+
+### **结论**
+
+**可以得到一些差异，但它们不足以作为 M2 的主证据。**
+
+Step 6 已经完成了 6 个 no-background baseline paired runs：
+
+```text
+apache_concurrency_100
+nginx_connections_100
+c_ray_1080p
+hackbench_thread_count_8
+sysbench_cpu
+sysbench_ram
+```
+
+这些 run 的 `planned_runs.csv` 中 `background=none`，policy 全部为 `baseline`。 
+
+  
+
+这些结果说明 baseline pipeline 是可用的。例如 run-level dataset 已经记录了：
+
+```text
+apache baseline: 29336.34 Requests/s
+c-ray baseline: 203.552 Seconds
+hackbench baseline: 83.303 Seconds
+nginx baseline: 19615.32 Requests/s
+sysbench CPU baseline: 7255.96 Events/s
+sysbench RAM baseline: 10919.88 MiB/s
+```
+
+其中 dataset 还包含 active-window CPU/PMU/sched features。   
+
+但是，没有背景干扰时直接跑 Step 7 的非默认策略，会出现两个问题：
+
+1. **`batch_manual`** **很可能差异不明显。**  
+    `SCHED_BATCH` 的主要影响在调度竞争、交互性和唤醒场景下更明显。单个 foreground benchmark 独占 fg cgroup 且无背景干扰时，它和 default 的差异可能较小。
+2. **`affinity_compact_manual`** **/** **`affinity_spread_manual`** **可能有差异，但解释会混杂。**  
+    affinity 改变的不只是“调度策略”，还改变了 CPU placement、SMT/物理核分布、cache locality、并行度。没有 background 时，如果看到性能变化，可能只是“绑核影响”，不一定能证明“不同场景需要不同策略”。
+
+所以，no-background Step 7 的定位应该是：
+
+```text
+solo-policy sensitivity / sanity reference
+```
+
+而不是 M2 的主证据。
+
+---
+
+## **2. 带背景干扰的计划是否可行？**
+
+### **结论**
+
+**可行，而且更适合作为 M2 主实验。**
+
+仓库里新增的 `configs/pts_contention_matrix.yaml` 已经把 Step 7 改成了 foreground + background contention 设计。它定义了两个 background：
+
+```text
+bg_cpu10:
+  stress-ng --cpu 10 --cpu-method matrixprod
+
+bg_mem_stream:
+  stress-ng --stream 4
+```
+
+分别放到 `/sys/fs/cgroup/featsched/bg`。 
+
+  
+
+它还定义了 contention scenarios：
+
+|**Scenario**|**Background**|**Policies**|
+|---|---|---|
+|apache_concurrency_100|bg_cpu10|baseline, batch, compact_affinity, spread_affinity|
+|nginx_connections_100|bg_cpu10|baseline, batch, compact_affinity, spread_affinity|
+|c_ray_1080p|bg_cpu10|baseline, batch, compact_affinity, spread_affinity|
+|hackbench_thread_count_8|bg_cpu10|baseline, batch, compact_affinity, spread_affinity|
+|sysbench_ram|bg_mem_stream|baseline, compact_affinity, spread_affinity|
+
+这些内容在 matrix 中已经明确列出。 
+
+  
+
+仓库生成的 `results/m2_contention_plan/planned_runs.csv` 也已经包含实际命令，例如 background command、manual policy command、PID discovery command、verify command、collector/benchmark output paths 等。   
+
+  
+
+这个计划是可行的，且更贴合 M2：
+
+```text
+同一个 scenario + 同一个 background 下比较不同 static policies
+```
+
+注意：`pts_contention_matrix.yaml` 自己也写明，不应把 no-background Step 6 rows 直接和 contention rows 比作 policy effect。 
+
+  
+
+因此：
+
+```text
+Step 6 no-background baseline = solo reference / sanity / slowdown reference
+Step 7 contention matrix = M2 static policy mismatch 主实验
+```
+
+---
+
+## **3. 当前实现 / 实验结果中的问题**
+
+### **3.1 当前已经解决或基本解决的问题**
+
+#### **A. PTS paired-run pipeline 已经跑通**
+
+当前仓库已经具备：
+
+```text
+PTS benchmark result
+→ run_summary.csv
+→ collector window_features.csv
+→ run_feature_summary.csv
+→ run_level_dataset.csv
+```
+
+`run_feature_summary.csv` 已经能把 idle windows 和 active windows 分开。例如 `pts-c-ray` 这次 run：
+
+```text
+total_window_count = 2401
+active_window_count = 2124
+active_duration_sec = 212.4
+active_fraction ≈ 0.8846
+active_cpu_util_mean ≈ 7.78
+```
+
+`tables/c_ray_once_dataset.csv` 已经把 `pts_score=208.525 Seconds` 与 active feature summary 合并为一行。 
+
+### 
+
+### 
+
+### **B.**
+
+**`run_m2.py`**
+
+**已经从 offline planner 升级为 paired-run planner**
+
+现在 `run_m2.py` 已经能生成 `planned_runs.csv`，包含：
+
+```text
+run_id
+scenario
+workload_config
+pts_profile
+pts_options
+collector_duration_sec
+policy
+background
+background_command
+manual_policy_command
+benchmark_pid_hint
+policy_verify_command
+post_start_verify_command
+benchmark_dir
+collectors_dir
+```
+
+它还会输出 background、collector、benchmark、manual policy、export、parse、aggregate、check 等完整命令。 
+
+---
+
+### **3.2 仍然存在的问题**
+
+#### **问题 1：当前 no-background baseline 不能直接支撑 M2 结论**
+
+Step 6 目前只有 baseline policy，没有 policy contrast。`planned_runs.csv` 显示所有 Step 6 rows 都是 `policy=baseline` 且 `background=none`。 
+
+因此它只能说明：
+
+```text
+pipeline 可运行；
+每个 workload 有 baseline objective；
+每个 workload 有 active features。
+```
+
+还不能说明：
+
+```text
+不同 workload 的 best policy 不同。
+```
+
+#### **问题 2：M2 正式分析脚本还需要适配 run-level dataset**
+
+当前 `analysis/m2_policy_matrix.py` 的命令行接口还是 `--run-summary / --objective-table / --app-metrics`，尚未完全适配 `tables/m2_dataset.csv` 这种 paired run-level dataset，也没有完整输出 heatmap / oracle policy / regret tables。 
+
+#### **问题 3：M3 仍是 window-level correlation，不是 run-level feature-policy 分析**
+
+当前 `analysis/m3_feature_policy.py` 仍然是把 `window_features.csv` 与 `app_metrics.csv` 做 window-level correlation。 
+
+但 PTS 的结果是 run-level。因此 M3 需要一个新的：
+
+```text
+analysis/m3_run_level_analysis.py
+```
+
+用：
+
+```text
+run_feature_summary.csv + run_summary.csv + oracle_policy.csv
+```
+
+来做 workload-class separability 和 best-policy prediction。
+
+#### **问题 4：manual policy command 当前偏向单 PID，可能漏掉 PTS 子进程**
+
+当前 `run_m2.py` 的 manual policy command 使用 `$PTS_PID`，例如：
+
+```text
+chrt --batch --pid 0 $PTS_PID
+taskset --cpu-list ... --pid $PTS_PID
+```
+
+planner 也提供 `benchmark_pid_hint`，即读取 foreground cgroup 的 `cgroup.procs`。 
+
+  
+
+问题是：PTS 可能先启动 wrapper，再启动实际 benchmark worker。只对一个 `$PTS_PID` 操作可能没有覆盖真正的 workload 进程。
+
+  
+
+需要改成：
+
+```text
+对 foreground cgroup 中所有当前 PIDs 执行 chrt/taskset
+并在 benchmark start 后再次验证
+```
+
+#### **问题 5：background command 有执行计划，但缺少 background verify**
+
+`planned_runs.csv` 已经有 background command，例如：
+
+```text
+echo $$ > /sys/fs/cgroup/featsched/bg/cgroup.procs
+exec stress-ng ...
+```
+
+但 planner 当前主要提供 foreground `post_start_verify_command`，缺少 background cgroup 的确认命令。需要补：
+
+```bash
+xargs -r ps -o pid,ppid,cls,rtprio,psr,comm -p < /sys/fs/cgroup/featsched/bg/cgroup.procs
+```
+
+
+#### **问题 6：**
+
+**`.gitignore`**
+
+**当前会追踪大量结果文件**
+
+当前 `.gitignore` 只忽略了 Python cache、object files 和 eBPF loader，不再忽略 `results/`、`runs/`、`figures/`。 
+
+这有利于共享小型示例，但如果后续执行完整 M2/M1，仓库会迅速膨胀。建议只提交：
+
+```text
+少量代表性 sample
+configs
+scripts
+tables summary
+figures
+manifest
+```
+
+大 raw results 用外部目录或 release artifact 保存。
+
+---
+
+# **4. 更新后的后续实验计划**
+
+下面按先后顺序列出。每一步标明执行者。
+
+---
+
+## **Step 1：同步仓库并确认当前 main**
+
+**执行者：你**
+
+```bash
+cd ~/experiments/featsched-motivation
+git pull
+git checkout -b run-m2-contention-and-m1
+git log --oneline -5
+pytest -q
+```
+
+验收：
+
+```text
+能看到 a3b3181 adapt m2 pts contention plan
+pytest 通过
+```
+
+---
+
+## **Step 2：修 manual policy 对单 PID 的问题**
+
+**执行者：Codex**
+
+Prompt：
+
+```text
+Update runners/run_m2.py so manual policy instructions apply to all foreground cgroup PIDs, not only a single $PTS_PID.
+
+Current issue:
+manual_policy_command uses $PTS_PID, but PTS may spawn wrapper and worker processes. Applying chrt/taskset to one PID may miss actual benchmark workers.
+
+Tasks:
+1. Add foreground_all_pids_policy_command for manual policies.
+2. For batch_manual, generate:
+   bash -lc 'while read -r pid; do chrt --batch --pid 0 "$pid" || true; done < /sys/fs/cgroup/featsched/fg/cgroup.procs'
+3. For affinity_compact_manual, generate:
+   bash -lc 'while read -r pid; do taskset --cpu-list <compact_cpu_list> --pid "$pid" || true; done < /sys/fs/cgroup/featsched/fg/cgroup.procs'
+4. For affinity_spread_manual, generate the analogous spread command.
+5. Keep existing single-PID command as manual_policy_command_legacy or remove it from the primary planned_runs.
+6. Add background_verify_command:
+   bash -lc 'xargs -r ps -o pid,ppid,cls,rtprio,psr,comm -p < /sys/fs/cgroup/featsched/bg/cgroup.procs'
+7. Add foreground_verify_command if not already present.
+8. Update planned_runs.csv columns and tests.
+9. Do not execute any commands.
+```
+
+验收：
+
+  
+
+**执行者：你**
+
+```bash
+pytest -q
+
+python3 runners/run_m2.py \
+  --matrix configs/pts_contention_matrix.yaml \
+  --output-dir results/m2_contention_plan_check \
+  --dry-run
+
+head -5 results/m2_contention_plan_check/planned_runs.csv
+```
+
+确认 `planned_runs.csv` 中存在：
+
+```text
+foreground_all_pids_policy_command
+background_verify_command
+```
+
+---
+
+## **Step 3：执行 M2 contention plan**
+
+**执行者：你**
+
+生成完整计划：
+
+```bash
+python3 runners/run_m2.py \
+  --matrix configs/pts_contention_matrix.yaml \
+  --output-dir results/m2_contention_plan \
+  --dry-run
+```
+
+当前 contention matrix 包含 19 个 planned runs。docs 中也写明 default Step 7 matrix 有 19 runs：apache/nginx/c-ray/hackbench 在 `bg_cpu10` 下跑 4 个 policies，sysbench_ram 在 `bg_mem_stream` 下跑 3 个 policies。 
+
+每个 run 按这个顺序执行：
+
+1. 启动 `background_command`。
+2. 启动 `collector_command`。
+3. 启动 `benchmark_command`。
+4. 在 PTS 菜单处暂停时，执行 `benchmark_pid_hint`。
+5. 执行 `foreground_all_pids_policy_command`，如果 policy 不是 baseline。
+6. 执行 `policy_verify_command`。
+7. 选择 PTS 选项，让 benchmark 开始。
+8. benchmark 启动后执行 `post_start_verify_command` 和 `background_verify_command`。
+9. PTS 完成后执行 export、parse、aggregate、check commands。
+
+这也与 `docs/pts_runbook.md` 里 Step 7 的执行顺序一致。 
+
+---
+
+## **Step 4：每个 contention run 结束后做完整检查**
+
+**执行者：你**
+
+对每个 run：
+
+```bash
+python3 analysis/check_benchmark_run.py \
+  --run-dir <RUN_ROOT>/benchmark \
+  --allow-benchmark-normalization
+
+python3 analysis/check_run_integrity.py \
+  --run-dir <RUN_ROOT>/collectors \
+  --expect-raw all
+
+python3 analysis/check_paired_run.py \
+  --run-root <RUN_ROOT>
+
+python3 analysis/aggregate_window_features.py \
+  --input <RUN_ROOT>/collectors/window_features.csv \
+  --output <RUN_ROOT>/collectors/run_feature_summary.csv \
+  --active-cpu-util-threshold 1.0
+```
+
+验收：
+
+```text
+每个 run 均有：
+benchmark/run_summary.csv
+collectors/window_features.csv
+collectors/run_feature_summary.csv
+paired_run_ok=true
+```
+
+---
+
+## **Step 5：构建 M2 contention dataset**
+
+**执行者：你**
+
+```bash
+python3 analysis/build_run_level_dataset.py \
+  --results-dir results/m2_contention_plan \
+  --output tables/m2_contention_dataset.csv
+```
+
+检查：
+
+```bash
+python3 - <<'PY'
+import pandas as pd
+df = pd.read_csv("tables/m2_contention_dataset.csv")
+print(df[["run_id","workload","policy","benchmark","metric_name","metric_value","higher_is_better"]].head())
+print(df.groupby(["workload","policy"]).size())
+print("rows:", len(df))
+PY
+```
+
+验收：
+
+```text
+预计至少 19 rows。
+每个 row 都有 metric_value 和 active feature columns。
+```
+
+---
+
+## **Step 6：更新 M2 analysis 以支持 run-level dataset**
+
+**执行者：Codex**
+
+Prompt：
+
+```text
+Refactor analysis/m2_policy_matrix.py for run-level paired datasets.
+
+Input:
+--run-level-dataset tables/m2_contention_dataset.csv
+
+Requirements:
+1. Read run-level dataset rows.
+2. Allow selecting metric_name; default to pts_score when present.
+3. Compute workload × policy mean metric_value.
+4. Respect higher_is_better per metric.
+5. normalized_score:
+   higher_is_better: value / best_value
+   lower_is_better: best_value / value
+6. regret:
+   higher_is_better: best_value / value - 1
+   lower_is_better: value / best_value - 1
+7. Output:
+   tables/m2/objective_table.csv
+   tables/m2/normalized_scores.csv
+   tables/m2/oracle_policy.csv
+   tables/m2/policy_regret.csv
+   figures/m2/policy_heatmap.pdf
+   figures/m2/policy_regret.pdf
+8. Failed or incomplete runs must be excluded only through an explicit failed_runs.csv.
+9. Add tests for:
+   - lower-is-better metric
+   - higher-is-better metric
+   - missing policy
+   - multiple workloads
+   - contention dataset with background column if present.
+```
+
+---
+
+## **Step 7：运行 M2 analysis**
+
+**执行者：你**
+
+```bash
+python3 analysis/m2_policy_matrix.py \
+  --run-level-dataset tables/m2_contention_dataset.csv \
+  --metric-name pts_score \
+  --out-dir figures/m2 \
+  --tables-dir tables/m2
+```
+
+验收标准：
+
+```text
+tables/m2/normalized_scores.csv 存在
+tables/m2/oracle_policy.csv 存在
+tables/m2/policy_regret.csv 存在
+figures/m2/policy_heatmap.pdf 存在
+figures/m2/policy_regret.pdf 存在
+```
+
+科学验收：
+
+```text
+同一个 workload + background 条件内比较 policy。
+不同 workload 的 oracle best policy 不完全相同。
+每个 static policy 至少在部分 workload 上有 regret。
+```
+
+---
+
+## **Step 8：实现 M3 run-level analysis**
+
+**执行者：Codex**
+
+Prompt：
+
+```text
+Implement analysis/m3_run_level_analysis.py.
+
+Input:
+--dataset tables/m2_contention_dataset.csv
+--oracle tables/m2/oracle_policy.csv optional
+
+Feature groups:
+1. cpu_util_only:
+   active_cpu_util_mean, active_cpu_util_p95, active_cpu_util_p99
+2. system:
+   active_cpu_util_*, active_cpu_pressure_some_*, active_cpu_pressure_full_*, active_fraction
+3. sched:
+   active_rq_lat_p95_us_*, active_rq_lat_p99_us_*,
+   active_ctx_switch_rate_*, active_invol_switch_rate_*,
+   active_migration_rate_*, active_wakeups_per_sec_*
+4. pmu:
+   active_ipc_*, active_cache_miss_rate_*, active_branch_miss_rate_*
+5. all:
+   all available active feature columns
+
+Tasks:
+1. Derive workload_class from workload/scenario names or optional mapping.
+2. Attach oracle_best_policy and near_best_policy_set if oracle is provided.
+3. Produce PCA by workload_class.
+4. Produce feature group ablation for workload_class classification.
+5. Produce best-policy / near-best policy prediction metrics if oracle policy diversity is sufficient.
+6. Use grouped split by workload/scenario.
+7. No random per-window split.
+8. Output:
+   tables/m3/dataset_used.csv
+   tables/m3/metrics.csv
+   tables/m3/feature_importance.csv
+   figures/m3/pca_by_workload_class.pdf
+   figures/m3/feature_group_ablation.pdf
+   figures/m3/decision_tree.pdf
+   figures/m3/policy_prediction_regret.pdf
+   docs/m3_rules.txt
+9. Do not claim online adaptation.
+```
+
+---
+
+## **Step 9：运行 M3 analysis**
+
+**执行者：你**
+
+```bash
+python3 analysis/m3_run_level_analysis.py \
+  --dataset tables/m2_contention_dataset.csv \
+  --oracle tables/m2/oracle_policy.csv \
+  --out-dir figures/m3 \
+  --tables-dir tables/m3
+```
+
+验收：
+
+```bash
+cat tables/m3/metrics.csv
+cat tables/m3/feature_importance.csv
+ls figures/m3
+cat docs/m3_rules.txt
+```
+
+科学验收：
+
+```text
+all-features 优于 cpu_util_only。
+workload_class 在 PCA / classifier 中可区分。
+如果 oracle policy 有多样性，near-best policy prediction 有结果。
+```
+
+---
+
+## **Step 10：实现 M1 wrk parser**
+
+**执行者：Codex**
+
+Prompt：
+
+```text
+Add M1 external latency support.
+
+Create analysis/parse_wrk_output.py.
+
+Input:
+--input stdout.txt
+--run-id
+--ts-start-ns
+--ts-end-ns
+--cgroup foreground
+--output app_metrics.csv
+
+Parse wrk --latency output:
+- Requests/sec -> app_throughput
+- Latency Distribution 50%, 75%, 90%, 99% if present
+- p50, p95 if available; if p95 absent, leave NaN
+- p99 is required unless --allow-no-p99 is passed
+
+Output schema:
+run_id,ts_start_ns,ts_end_ns,cgroup,app_p50_us,app_p95_us,app_p99_us,app_throughput
+
+Add tests with synthetic wrk output.
+Do not run wrk automatically.
+```
+
+---
+
+## **Step 11：新增 M1 web latency matrix**
+
+**执行者：Codex**
+
+Prompt：
+
+```text
+Add configs/m1_web_latency_matrix.yaml.
+
+Scenarios:
+- nginx_wrk_c20_none
+- nginx_wrk_c100_none
+- nginx_wrk_c500_none
+- nginx_wrk_c100_c_ray_bg
+- nginx_wrk_c100_hackbench_bg
+- nginx_wrk_c100_sysbench_ram_bg
+- nginx_wrk_c100_stress_cache_bg
+
+Fields:
+- foreground_service
+- wrk_threads
+- wrk_connections
+- wrk_duration_sec
+- background_workload
+- collector_window_ms
+- objective: app_p99_us
+- policy: baseline
+
+Notes:
+- PTS apache/nginx RPS is not app_p99_us.
+- app_p99_us must come from wrk/hey/siege or TailBench++.
+- Use cpu_util_norm = cpu_util / allocated_cpu_count.
+```
+
+---
+
+## **Step 12：执行 M1 web latency runs**
+
+**执行者：你**
+
+安装 wrk 和 nginx：
+
+```bash
+sudo apt install -y wrk nginx
+echo "ok" | sudo tee /var/www/html/test.html
+curl http://127.0.0.1/test.html
+```
+
+单次 run 模板：
+
+```bash
+RUN_ID="m1-nginx-wrk-c100-none-$(date +%s)"
+RUN_ROOT="results/m1/$RUN_ID"
+COLLECT_OUT="$RUN_ROOT/collectors"
+APP_OUT="$RUN_ROOT/app"
+
+mkdir -p "$COLLECT_OUT" "$APP_OUT"
+```
+
+启动 collector：
+
+```bash
+scripts/run_collectors_concurrent.sh \
+  --execute \
+  --run-id "$RUN_ID" \
+  --workload-label nginx_wrk_c100 \
+  --policy-label baseline \
+  --notes "M1 wrk latency run" \
+  --pmu-scope system \
+  --duration 120 \
+  --window-ms 100 \
+  --cgroup-path /sys/fs/cgroup/featsched/fg \
+  --output-dir "$COLLECT_OUT"
+```
+
+运行 wrk：
+
+```bash
+START_NS=$(python3 - <<'PY'
+import time
+print(time.monotonic_ns())
+PY
+)
+
+wrk --latency -t4 -c100 -d90s http://127.0.0.1/test.html \
+  | tee "$APP_OUT/wrk_stdout.txt"
+
+END_NS=$(python3 - <<'PY'
+import time
+print(time.monotonic_ns())
+PY
+)
+
+python3 analysis/parse_wrk_output.py \
+  --input "$APP_OUT/wrk_stdout.txt" \
+  --run-id "$RUN_ID" \
+  --ts-start-ns "$START_NS" \
+  --ts-end-ns "$END_NS" \
+  --cgroup /sys/fs/cgroup/featsched/fg \
+  --output "$APP_OUT/app_metrics.csv"
+```
+
+按 `configs/m1_web_latency_matrix.yaml` 跑所有 M1 scenarios。
+
+---
+
+## **Step 13：完善 M1 analysis**
+
+**执行者：Codex**
+
+Prompt：
+
+```text
+Refactor analysis/m1_proxy_metric.py for real M1 run directories.
+
+Requirements:
+1. Support --results-dir containing multiple M1 run roots.
+2. For each run root, load:
+   collectors/window_features.csv
+   app/app_metrics.csv
+3. Support app_metrics covering a larger interval than 100ms windows:
+   assign app_p99_us to windows whose ts_start_ns..ts_end_ns overlap app interval,
+   or aggregate features over the app interval.
+4. Add derived cpu_util_norm:
+   cpu_util / allocated_cpu_count.
+   allocated_cpu_count is passed as --allocated-cpus or inferred from run_meta if possible.
+5. Use cpu_util_norm for CPU-utilization bucket analysis.
+6. Outputs:
+   tables/m1/correlation.csv
+   tables/m1/bucket_summary.csv
+   tables/m1/prediction_error.csv
+   figures/m1/cpu_util_norm_vs_app_p99.pdf
+   figures/m1/bucket_app_p99_boxplot.pdf
+7. Fail if app_p99_us is missing or all NaN.
+8. Do not use collector smoke runs.
+9. Add tests with two synthetic M1 run roots.
+```
+
+---
+
+## **Step 14：运行 M1 analysis**
+
+**执行者：你**
+
+```bash
+python3 analysis/m1_proxy_metric.py \
+  --results-dir results/m1 \
+  --out-dir figures/m1 \
+  --tables-dir tables/m1 \
+  --allocated-cpus 8
+```
+
+验收：
+
+```text
+tables/m1/correlation.csv 存在
+tables/m1/bucket_summary.csv 存在
+tables/m1/prediction_error.csv 存在
+figures/m1/cpu_util_norm_vs_app_p99.pdf 存在
+figures/m1/bucket_app_p99_boxplot.pdf 存在
+```
+
+---
+
+## **Step 15：整理 manifest**
+
+**执行者：Codex**
+
+Prompt：
+
+```text
+Add scripts/make_manifest.py.
+
+It should:
+1. Recursively list files under results, runs, figures, tables, configs, docs.
+2. Record file size and sha256.
+3. Record git commit hash.
+4. Record environment probe path if logs/env_probe.json exists.
+5. Output artifacts/manifest.json.
+6. Do not modify raw data.
+```
+
+执行：
+
+  
+
+**执行者：你**
+
+```bash
+mkdir -p artifacts
+
+python3 scripts/make_manifest.py \
+  --results results \
+  --runs runs \
+  --figures figures \
+  --tables tables \
+  --configs configs \
+  --out artifacts/manifest.json
+```
+
+---
+
+# **5. 对两个问题的最终回答**
+
+## **Q1：无背景干扰下直接做 Step 7 能否得到显著结果？**
+
+能得到部分数值变化，但 M2 主结论应基于有背景干扰的 contention matrix。
+
+原因：
+
+```text
+无背景下 batch_manual 可能差异弱；
+affinity policy 可能有差异，但容易混入 CPU placement / 核数 / locality 影响；
+Step 6 只有 baseline，无 policy contrast；
+背景干扰下更能暴露 static policy 的场景依赖性。
+```
+
+仓库新增的 `pts_contention_matrix.yaml` 是可行的，也更适合作为 M2 主实验。它已经定义了 bg_cpu10、bg_mem_stream、scenario、policy、collector duration 和执行约束。   
+
+## **Q2：当前实现 / 结果是否存在问题？**
+
+有，主要是这些：
+
+```text
+1. Step 6 no-background baseline 不能直接支撑 M2 主结论。
+2. M2 analysis 还需要支持 run-level paired dataset 输出 heatmap/regret/oracle policy。
+3. M3 还需要 run-level analysis。
+4. manual policy 当前需要覆盖 fg cgroup 内所有 PIDs，而不是单一 $PTS_PID。
+5. background run 需要增加 verify command。
+6. raw results 已被纳入 git，后续需要控制结果文件规模。
+7. M1 p99 latency path 还没有完成，不能用 PTS RPS 代替 app_p99_us。
+```
+
+更新后的执行路线是：
+
+```text
+M2：执行 contention matrix → build run-level dataset → heatmap/regret/oracle policy
+M3：用 M2 dataset 做 feature separability 和 policy prediction
+M1：用 nginx/apache + wrk --latency 采 app_p99_us，证明 proxy mismatch
 ```
