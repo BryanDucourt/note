@@ -434,11 +434,11 @@ python3 runners/run_m2.py \
 
 执行要求：
 
-|**Policy**|**手工动作**|
-|---|---|
-|`batch_manual`|对 benchmark 主进程执行 `chrt --batch --pid 0 <pid>`|
-|`affinity_compact_manual`|对 benchmark 主进程执行 `taskset --cpu-list <compact_cpu_list> --pid <pid>`|
-|`affinity_spread_manual`|对 benchmark 主进程执行 `taskset --cpu-list <spread_cpu_list> --pid <pid>`|
+| **Policy**                | **手工动作**                                                              |
+| ------------------------- | --------------------------------------------------------------------- |
+| `batch_manual`            | 对 benchmark 主进程执行 `chrt --batch --pid 0 <pid>`                        |
+| `affinity_compact_manual` | 对 benchmark 主进程执行 `taskset --cpu-list <compact_cpu_list> --pid <pid>` |
+| `affinity_spread_manual`  | 对 benchmark 主进程执行 `taskset --cpu-list <spread_cpu_list> --pid <pid>`  |
 
 每次运行必须把实际手工命令记录到对应 `benchmark/run_meta.json`，至少包括：
 
