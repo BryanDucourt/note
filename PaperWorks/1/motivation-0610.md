@@ -2,7 +2,7 @@
 
 ---
 
-# **1. 当前进展检查**
+## **1. 当前进展检查**
 
 ## **1.1 最新提交概况**
 
@@ -144,13 +144,13 @@ cpu_util_norm 处理
 
 ---
 
-# **2. 完整实验计划：按先后顺序执行**
+## **2. 完整实验计划：按先后顺序执行**
 
 下面不按“我执行 / Codex 执行”分组，而是按**执行顺序**列出，每一步标明执行者。
 
 ---
 
-# **Step 1：拉取最新仓库并确认当前状态**
+## **Step 1：拉取最新仓库并确认当前状态**
 
 **执行者：你**
 
@@ -176,7 +176,7 @@ pytest -q
 
 ---
 
-# **Step 2：检查当前 c-ray paired run 是否完整**
+## **Step 2：检查当前 c-ray paired run 是否完整**
 
 **执行者：你**
 
@@ -200,7 +200,7 @@ python3 analysis/check_paired_run.py \
 
 ---
 
-# **Step 3：修 Phoronix benchmark ID 一致性**
+## **Step 3：修 Phoronix benchmark ID 一致性**
 
 **执行者：Codex**
 
@@ -241,7 +241,7 @@ python3 analysis/check_benchmark_run.py \
 
 ---
 
-# **Step 4：验证当前 c-ray run-level dataset**
+## **Step 4：验证当前 c-ray run-level dataset**
 
 **执行者：你**
 
@@ -274,11 +274,8 @@ cat tables/c_ray_once_dataset.csv
 
 ---
 
-# 
 
-# 
-
-# **Step 5：把**
+## **Step 5：把**
 
 **`run_m2.py`**
 
