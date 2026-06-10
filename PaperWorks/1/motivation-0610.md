@@ -1343,13 +1343,13 @@ manifest
 
 ---
 
-# **4. 更新后的后续实验计划**
+## **4. 更新后的后续实验计划**
 
 下面按先后顺序列出。每一步标明执行者。
 
 ---
 
-## **Step 1：同步仓库并确认当前 main**
+### **Step 1：同步仓库并确认当前 main**
 
 **执行者：你**
 
@@ -1370,7 +1370,7 @@ pytest 通过
 
 ---
 
-## **Step 2：修 manual policy 对单 PID 的问题**
+### **Step 2：修 manual policy 对单 PID 的问题**
 
 **执行者：Codex**
 
@@ -1423,7 +1423,7 @@ background_verify_command
 
 ---
 
-## **Step 3：执行 M2 contention plan**
+### **Step 3：执行 M2 contention plan**
 
 **执行者：你**
 
@@ -1454,7 +1454,7 @@ python3 runners/run_m2.py \
 
 ---
 
-## **Step 4：每个 contention run 结束后做完整检查**
+### **Step 4：每个 contention run 结束后做完整检查**
 
 **执行者：你**
 
@@ -1490,7 +1490,7 @@ paired_run_ok=true
 
 ---
 
-## **Step 5：构建 M2 contention dataset**
+### **Step 5：构建 M2 contention dataset**
 
 **执行者：你**
 
@@ -1521,7 +1521,7 @@ PY
 
 ---
 
-## **Step 6：更新 M2 analysis 以支持 run-level dataset**
+### **Step 6：更新 M2 analysis 以支持 run-level dataset**
 
 **执行者：Codex**
 
@@ -1562,7 +1562,7 @@ Requirements:
 
 ---
 
-## **Step 7：运行 M2 analysis**
+### **Step 7：运行 M2 analysis**
 
 **执行者：你**
 
@@ -1594,7 +1594,7 @@ figures/m2/policy_regret.pdf 存在
 
 ---
 
-## **Step 8：实现 M3 run-level analysis**
+### **Step 8：实现 M3 run-level analysis**
 
 **执行者：Codex**
 
@@ -1643,7 +1643,7 @@ Tasks:
 
 ---
 
-## **Step 9：运行 M3 analysis**
+### **Step 9：运行 M3 analysis**
 
 **执行者：你**
 
@@ -1674,7 +1674,7 @@ workload_class 在 PCA / classifier 中可区分。
 
 ---
 
-## **Step 10：实现 M1 wrk parser**
+### **Step 10：实现 M1 wrk parser**
 
 **执行者：Codex**
 
@@ -1708,7 +1708,7 @@ Do not run wrk automatically.
 
 ---
 
-## **Step 11：新增 M1 web latency matrix**
+### **Step 11：新增 M1 web latency matrix**
 
 **执行者：Codex**
 
@@ -1744,7 +1744,7 @@ Notes:
 
 ---
 
-## **Step 12：执行 M1 web latency runs**
+### **Step 12：执行 M1 web latency runs**
 
 **执行者：你**
 
@@ -1814,7 +1814,7 @@ python3 analysis/parse_wrk_output.py \
 
 ---
 
-## **Step 13：完善 M1 analysis**
+### **Step 13：完善 M1 analysis**
 
 **执行者：Codex**
 
@@ -1848,7 +1848,7 @@ Requirements:
 
 ---
 
-## **Step 14：运行 M1 analysis**
+### **Step 14：运行 M1 analysis**
 
 **执行者：你**
 
@@ -1872,7 +1872,7 @@ figures/m1/bucket_app_p99_boxplot.pdf 存在
 
 ---
 
-## **Step 15：整理 manifest**
+### **Step 15：整理 manifest**
 
 **执行者：Codex**
 
@@ -1910,9 +1910,9 @@ python3 scripts/make_manifest.py \
 
 ---
 
-# **5. 对两个问题的最终回答**
+## **5. 对两个问题的最终回答**
 
-## **Q1：无背景干扰下直接做 Step 7 能否得到显著结果？**
+### **Q1：无背景干扰下直接做 Step 7 能否得到显著结果？**
 
 能得到部分数值变化，但 M2 主结论应基于有背景干扰的 contention matrix。
 
@@ -1927,7 +1927,7 @@ Step 6 只有 baseline，无 policy contrast；
 
 仓库新增的 `pts_contention_matrix.yaml` 是可行的，也更适合作为 M2 主实验。它已经定义了 bg_cpu10、bg_mem_stream、scenario、policy、collector duration 和执行约束。   
 
-## **Q2：当前实现 / 结果是否存在问题？**
+### **Q2：当前实现 / 结果是否存在问题？**
 
 有，主要是这些：
 
