@@ -157,6 +157,20 @@
       "images": [],
       "contentDigest": "48a36f50e2e36b90ed9ca24a481f1d60a5516dab719d1f4bd584bf2660b2e8bc",
       "providerUserMessageId": "01a09f43-59dd-7210-a420-19de11a9b16f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789385680095-hx2zyj1",
+      "userTurnOrdinal": 12,
+      "state": "accepted",
+      "localMessageId": "msg-1789385680082-q6p2zia",
+      "timestamp": 1789385680082,
+      "rawDisplayText": "按照研究设想整理的结果，下周主要的任务是什么？用简洁易懂的语言描述",
+      "canonicalText": "按照研究设想整理的结果，下周主要的任务是什么？用简洁易懂的语言描述",
+      "images": [],
+      "contentDigest": "7cf041e08bbc3056da7a765e9f1c1dc1b2addeaa25501f4da1c6f02950a406f3",
+      "providerUserMessageId": "01a09fb2-a5a8-7500-a7d7-694893c6a982",
+      "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7dbedc11087d098aff084981f111f"
     }
   ]
 }
