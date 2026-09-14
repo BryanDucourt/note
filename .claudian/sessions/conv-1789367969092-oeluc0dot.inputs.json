@@ -20,6 +20,20 @@
       "contentDigest": "980eeb8fbef79b549777c7a175dffc08142b9e01e2ea4f8818ae844a10976a1c",
       "providerUserMessageId": "01a09ea4-72f6-7aa0-98e5-b6ac342061bc",
       "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa796bdcca487d0a76a221d20d0ec84"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789369321418-jsb31mm",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789369321404-dho6q54",
+      "timestamp": 1789369321404,
+      "rawDisplayText": "从问题的角度出发，本周应该怎么开展工作",
+      "canonicalText": "从问题的角度出发，本周应该怎么开展工作",
+      "images": [],
+      "contentDigest": "22229db898c793ce9302717354542c914fe79d6ab255d34125a6a7f4cd05f0c6",
+      "providerUserMessageId": "01a09eb9-081f-7ee0-abac-315ed7c5b6be",
+      "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa79c0d8f6487d0842061b254a967c3"
     }
   ]
 }
