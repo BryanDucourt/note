@@ -60,7 +60,8 @@
       "canonicalText": "具体一点，从官方渠道能获取什么内容，如何使用，能得出什么结论",
       "images": [],
       "contentDigest": "2dbb5c2089cb8098d6b057cd173b0bd789a883fa913210320700497dccb2ecf9",
-      "providerUserMessageId": "01a09f04-f1cf-7513-8383-4f6539aeee6b"
+      "providerUserMessageId": "01a09f04-f1cf-7513-8383-4f6539aeee6b",
+      "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7afcf965087d08583f47c1683ada3"
     }
   ]
 }
