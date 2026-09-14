@@ -62,6 +62,20 @@
       "contentDigest": "2dbb5c2089cb8098d6b057cd173b0bd789a883fa913210320700497dccb2ecf9",
       "providerUserMessageId": "01a09f04-f1cf-7513-8383-4f6539aeee6b",
       "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7afcf965087d08583f47c1683ada3"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789375671217-pbeaffa",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789375671202-nhgmc0r",
+      "timestamp": 1789375671203,
+      "rawDisplayText": "回答的这三个问题听起来不够trival，再打磨一下",
+      "canonicalText": "回答的这三个问题听起来不够trival，再打磨一下",
+      "images": [],
+      "contentDigest": "f41a6173bdb9f53046fdabeb1c1a4381c23d427ae89621c5e3cb97c1abe2af1c",
+      "providerUserMessageId": "01a09f19-ebed-7c50-a71f-a5b69e12f5c5",
+      "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7b4c8d43c87d0a834b0f0ce257c49"
     }
   ]
 }
