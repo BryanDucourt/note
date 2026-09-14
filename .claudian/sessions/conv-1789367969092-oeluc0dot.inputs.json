@@ -46,7 +46,8 @@
       "canonicalText": "目前我们有什么办法能够拿到可分析的任务过程",
       "images": [],
       "contentDigest": "043a233730d95988535057d8255ce3009da6710e5d5936fb0cc968f8501e23eb",
-      "providerUserMessageId": "01a09ef7-181e-7942-98bf-f0bed6da985b"
+      "providerUserMessageId": "01a09ef7-181e-7942-98bf-f0bed6da985b",
+      "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7ac02438087d08cbcd11387710c1f"
     }
   ]
 }
