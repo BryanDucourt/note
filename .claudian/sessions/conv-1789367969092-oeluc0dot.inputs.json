@@ -90,6 +90,33 @@
       "contentDigest": "fb64ed077ede8b0171ee3187f339dbf1f338904ddbe75e1734e960dd63338346",
       "providerUserMessageId": "01a09f2a-ec0f-78a3-a267-74a3cba53f7b",
       "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7b92830f887d0b475ffe6772920c6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789377492700-r7kxbkm",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1789377492683-xby3qbj",
+      "timestamp": 1789377492684,
+      "rawDisplayText": "这是问题层面的认知，基于此，我们可能得出什么样的idea或者猜想",
+      "canonicalText": "这是问题层面的认知，基于此，我们可能得出什么样的idea或者猜想",
+      "images": [],
+      "contentDigest": "284a4a9ef2a88b21dcfeff1228357530331198c61c88ec5dc1a478f2f206b3c8",
+      "providerUserMessageId": "01a09f35-b75e-7450-986f-3ee8bce80e98",
+      "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7bbeb426887d09ea0c699178380a8"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789377560672-6yqmym2",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1789377560667-67utefv",
+      "timestamp": 1789377560667,
+      "rawDisplayText": "你是什么模型",
+      "canonicalText": "你是什么模型",
+      "images": [],
+      "contentDigest": "5cd5e8b5fecc8827dee2d60f0bf45af45c79c1f87ad1880e94e0264a8f6834e9",
+      "providerUserMessageId": "01a09f36-c0d2-7311-864b-02681c596e82"
     }
   ]
 }
