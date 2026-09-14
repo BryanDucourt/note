@@ -48,6 +48,19 @@
       "contentDigest": "043a233730d95988535057d8255ce3009da6710e5d5936fb0cc968f8501e23eb",
       "providerUserMessageId": "01a09ef7-181e-7942-98bf-f0bed6da985b",
       "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7ac02438087d08cbcd11387710c1f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789374296473-0ev53s8",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789374296462-e1q95uz",
+      "timestamp": 1789374296462,
+      "rawDisplayText": "具体一点，从官方渠道能获取什么内容，如何使用，能得出什么结论",
+      "canonicalText": "具体一点，从官方渠道能获取什么内容，如何使用，能得出什么结论",
+      "images": [],
+      "contentDigest": "2dbb5c2089cb8098d6b057cd173b0bd789a883fa913210320700497dccb2ecf9",
+      "providerUserMessageId": "01a09f04-f1cf-7513-8383-4f6539aeee6b"
     }
   ]
 }
