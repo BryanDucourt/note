@@ -1,9 +1,9 @@
 {
   "userName": "",
   "permissionMode": "yolo",
-  "model": "gpt-5.6-sol",
+  "model": "gpt-6-astra",
   "thinkingBudget": "off",
-  "effortLevel": "high",
+  "effortLevel": "max",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
   "titleGenerationLocale": "",
@@ -346,11 +346,11 @@
   },
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "gpt-5.6-sol"
+    "codex": "gpt-6-astra"
   },
   "savedProviderEffort": {
     "claude": "high",
-    "codex": "high"
+    "codex": "max"
   },
   "savedProviderServiceTier": {
     "codex": "default"
