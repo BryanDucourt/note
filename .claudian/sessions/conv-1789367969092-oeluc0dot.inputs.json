@@ -116,7 +116,8 @@
       "canonicalText": "你是什么模型",
       "images": [],
       "contentDigest": "5cd5e8b5fecc8827dee2d60f0bf45af45c79c1f87ad1880e94e0264a8f6834e9",
-      "providerUserMessageId": "01a09f36-c0d2-7311-864b-02681c596e82"
+      "providerUserMessageId": "01a09f36-c0d2-7311-864b-02681c596e82",
+      "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa7bc34259087d0ac7a7a55e9054758"
     }
   ]
 }
