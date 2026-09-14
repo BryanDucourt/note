@@ -34,6 +34,19 @@
       "contentDigest": "22229db898c793ce9302717354542c914fe79d6ab255d34125a6a7f4cd05f0c6",
       "providerUserMessageId": "01a09eb9-081f-7ee0-abac-315ed7c5b6be",
       "providerAssistantMessageId": "msg_0c65da5ac55dc78f016aa79c0d8f6487d0842061b254a967c3"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789373388627-fixl5u9",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789373388614-3juq9f5",
+      "timestamp": 1789373388614,
+      "rawDisplayText": "目前我们有什么办法能够拿到可分析的任务过程",
+      "canonicalText": "目前我们有什么办法能够拿到可分析的任务过程",
+      "images": [],
+      "contentDigest": "043a233730d95988535057d8255ce3009da6710e5d5936fb0cc968f8501e23eb",
+      "providerUserMessageId": "01a09ef7-181e-7942-98bf-f0bed6da985b"
     }
   ]
 }
