@@ -4,7 +4,7 @@
   "title": "Test how history improves decisions and execution",
   "titleGenerationStatus": "success",
   "createdAt": 1789893202697,
-  "lastActivityAt": 1789893227234,
+  "lastActivityAt": 1789893416044,
   "sessionId": "01a0bdf2-d341-7953-b28f-60e9b882ecdd",
   "selectedModel": "gpt-6-astra",
   "providerState": {
@@ -13,5 +13,15 @@
     "sessionFilePath": "/Users/duyuchen/.codex/sessions/2026/09/20/rollout-2026-09-20T16-33-22-01a0bdf2-d341-7953-b28f-60e9b882ecdd.jsonl",
     "transcriptRootPath": "/Users/duyuchen/.codex/sessions",
     "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 32227,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 30976,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 32227,
+    "percentage": 7,
+    "model": "gpt-6-astra"
   }
 }
