@@ -1,0 +1,17 @@
+{
+  "id": "conv-1789893202683-ee599g8s5",
+  "providerId": "codex",
+  "title": "Test how history improves decisions and execution",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789893202697,
+  "lastActivityAt": 1789893227234,
+  "sessionId": "01a0bdf2-d341-7953-b28f-60e9b882ecdd",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0bdf2-d341-7953-b28f-60e9b882ecdd",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/duyuchen/.codex/sessions/2026/09/20/rollout-2026-09-20T16-33-22-01a0bdf2-d341-7953-b28f-60e9b882ecdd.jsonl",
+    "transcriptRootPath": "/Users/duyuchen/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  }
+}
