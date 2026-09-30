@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1790740029544-6rbxtkyza",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790740029572-fjr3mmr",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1790740029534-u945ma9",
+      "timestamp": 1790740029534,
+      "rawDisplayText": "把这份文档里所有应该是公式块的地方都用inline的$ $或者$$ $$ 包裹起来，去掉外面没必要的括号",
+      "canonicalText": "把这份文档里所有应该是公式块的地方都用inline的$ $或者$$ $$ 包裹起来，去掉外面没必要的括号",
+      "context": {
+        "linkedContent": {
+          "path": "Work/长程上下文/几个想法.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "51f13cf606d9f98218d6714ba940511eda1f5fe5c452263fd7740e1d5840bdc0",
+      "providerUserMessageId": "01a0f06c-70e2-7843-a319-3c68248bf3f6"
+    }
+  ]
+}
