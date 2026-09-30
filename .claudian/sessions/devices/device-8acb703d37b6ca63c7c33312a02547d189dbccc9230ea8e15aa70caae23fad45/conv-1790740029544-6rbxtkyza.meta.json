@@ -4,7 +4,7 @@
   "title": "Add math delimiters and remove extra parentheses",
   "titleGenerationStatus": "success",
   "createdAt": 1790740029549,
-  "lastActivityAt": 1790740029549,
+  "lastActivityAt": 1790740115840,
   "sessionId": "01a0f06c-6454-75c2-a0c8-67b546972998",
   "selectedModel": "gpt-6-astra",
   "providerState": {
@@ -14,5 +14,15 @@
     "transcriptRootPath": "/Users/duyuchen/.codex/sessions",
     "workspaceDependencyToolVersion": 1
   },
-  "linkedContentPath": "Work/长程上下文/几个想法.md"
+  "linkedContentPath": "Work/长程上下文/几个想法.md",
+  "usage": {
+    "inputTokens": 36358,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 34304,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 36358,
+    "percentage": 8,
+    "model": "gpt-6-astra"
+  }
 }
