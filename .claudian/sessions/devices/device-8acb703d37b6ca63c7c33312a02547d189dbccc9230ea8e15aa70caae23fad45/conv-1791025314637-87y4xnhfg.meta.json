@@ -1,0 +1,28 @@
+{
+  "id": "conv-1791025314637-87y4xnhfg",
+  "providerId": "codex",
+  "title": "Fix all formula formatting in the article",
+  "titleGenerationStatus": "success",
+  "createdAt": 1791025314641,
+  "lastActivityAt": 1791025339445,
+  "sessionId": "01a1016d-7b92-7091-8aa1-f08cf94ef516",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a1016d-7b92-7091-8aa1-f08cf94ef516",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/duyuchen/.codex/sessions/2026/10/03/rollout-2026-10-03T19-01-54-01a1016d-7b92-7091-8aa1-f08cf94ef516.jsonl",
+    "transcriptRootPath": "/Users/duyuchen/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "Work/长程上下文/1003.md",
+  "usage": {
+    "inputTokens": 22929,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 22272,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 22929,
+    "percentage": 5,
+    "model": "gpt-6-astra"
+  }
+}

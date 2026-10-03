@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1791025314637-87y4xnhfg",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1791025314663-p513c9k",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1791025314626-5nxt0xl",
+      "timestamp": 1791025314626,
+      "rawDisplayText": "把这篇文章所有应该是公式的地方都修正成正确的格式",
+      "canonicalText": "把这篇文章所有应该是公式的地方都修正成正确的格式",
+      "context": {
+        "linkedContent": {
+          "path": "Work/长程上下文/1003.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "5a151d685560aaffaa0059d4c08af460a6d17d1299d271d7f8f5d5ca14d68f55",
+      "providerUserMessageId": "01a1016d-9519-7f21-9f98-a7f8afb2d2b3",
+      "providerAssistantMessageId": "msg_09a30733996ae201016ac0e0ba3384819196c3c65d677080fa"
+    }
+  ]
+}
