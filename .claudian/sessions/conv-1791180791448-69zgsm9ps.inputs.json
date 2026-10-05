@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1791180791448-69zgsm9ps",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1791180791474-qhax1i5",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1791180791442-djflxq2",
+      "timestamp": 1791180791442,
+      "rawDisplayText": "整理好这个文档的格式",
+      "canonicalText": "整理好这个文档的格式",
+      "context": {
+        "linkedContent": {
+          "path": "Work/长程上下文/1005.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "ae9d4ff27207026d6af0faeb35a51793a764567facfae402f5c5f7106bad3a10",
+      "providerUserMessageId": "01a10ab1-edce-7ad2-ac46-559ec78061db",
+      "providerAssistantMessageId": "msg_0826c90d69390220016ac3403ed58087d097cd43eeb1cb45a8"
+    }
+  ]
+}

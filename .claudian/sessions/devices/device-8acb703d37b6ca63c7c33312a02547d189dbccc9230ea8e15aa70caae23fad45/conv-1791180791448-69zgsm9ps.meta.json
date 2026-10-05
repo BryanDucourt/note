@@ -1,0 +1,28 @@
+{
+  "id": "conv-1791180791448-69zgsm9ps",
+  "providerId": "codex",
+  "title": "Format the document",
+  "titleGenerationStatus": "success",
+  "createdAt": 1791180791459,
+  "lastActivityAt": 1791180866993,
+  "sessionId": "01a10ab1-e080-7bb3-8ee3-d6c86c86b923",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a10ab1-e080-7bb3-8ee3-d6c86c86b923",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/duyuchen/.codex/sessions/2026/10/05/rollout-2026-10-05T14-13-11-01a10ab1-e080-7bb3-8ee3-d6c86c86b923.jsonl",
+    "transcriptRootPath": "/Users/duyuchen/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "Work/长程上下文/1005.md",
+  "usage": {
+    "inputTokens": 21673,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 19840,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 21673,
+    "percentage": 5,
+    "model": "gpt-6-astra"
+  }
+}
