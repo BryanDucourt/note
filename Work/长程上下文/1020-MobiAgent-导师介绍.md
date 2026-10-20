@@ -2,7 +2,7 @@
 
 **论文**：*MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation*
 - 作者单位：香港大学、Astribot、南方科技大学
-- 发表：[arXiv 2610.03476](https://arxiv.org/abs/2610.03476)，2026 年 10 月
+- 发表：CoRL 2026 录用（据 arXiv 页面的作者备注）；预印本 [arXiv 2610.03476](https://arxiv.org/abs/2610.03476)，2026 年 10 月
 - 代码：已在 GitHub 开源（kaiknower/MobiAgent）
 
 本文依据论文正文和公开代码，代码看的是最新提交 `ffce244`。
