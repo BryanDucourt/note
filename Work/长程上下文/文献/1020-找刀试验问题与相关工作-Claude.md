@@ -3,7 +3,7 @@
 依据：
 - 你整理的《本机 BEHAVIOR 近期试验与当前问题》（截至 `5b30d88`）；
 - LHC 仓库的代码和文档：`docs/architecture.md`、`docs/memory-manager.md`、`lhc_demo/models.py`、`progress.py`、`navigation_guard.py`、`context.py`；
-- [1016 讨论结论](1016-讨论-结论.md)；
+- [1016 讨论结论](../会审/1016-讨论/1016-讨论-结论.md)；
 - [10-19 下一轮实验设计 v0.1](/Volumes/2T/Code/Others/LHC/experiments/high_level_history_next_round_v0_1.md)。
 
 五轮试验的运行数据（图像、模型请求、记忆历史）没有同步到这台机器，本文没有读到原始记录，试验数字都来自你的整理。文献部分来自四路检索；其中最接近的二十多篇，我逐篇核对了 arXiv 摘要页，核对情况见文末。
