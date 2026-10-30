@@ -1,6 +1,6 @@
 # BEHAVIOR：每步耗时实测和渲染拆分（1030）
 
-**状态**：草稿，等用户确认。确认后放进仓库 `docs/tasks/`。
+**状态**：用户 1030 确认（"发吧"）。仓库版本在 660e581 提交，1030 已发给 gpt，正在跑。
 
 **读者**：gpt（`lhc-context-demo`，分支 `codex/context-engineering-demo`）。
 
